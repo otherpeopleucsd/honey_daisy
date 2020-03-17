@@ -8,10 +8,52 @@ fields:
 - type: text
   name: title
   label: title
-- name: team
+- name: editor-in-chief
   type: list
   config:
     use_select: false
     min: 
     max: 
-  label: team
+  label: Editor-in-Chief
+- name: editorial
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: Editorial
+- name: design_team
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: Design
+- name: events
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: Events
+- name: public_relations
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: Public Relations
+- name: media
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: Media
+- name: finance
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: Finance
