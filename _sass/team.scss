@@ -4,10 +4,10 @@
 // }
 
 .team_intro_container {
-    font-family: 'Cardo', serif;
-    font-style: italic;
-font-size: 3rem;
-    position: relative;
+  font-family: "Cardo", serif;
+  font-style: italic;
+  font-size: 3rem;
+  position: relative;
   margin: auto;
   width: 80%;
   color: $bodyColor;
@@ -15,7 +15,7 @@ font-size: 3rem;
 }
 
 .team_intro {
-    padding: 32px;
+  padding: 32px;
 }
 
 .team_module {
@@ -24,7 +24,7 @@ font-size: 3rem;
   grid-template-columns: auto auto auto;
   grid-gap: 1px;
 
-  padding: 84px 0 84px 0;
+  padding: 80px 0 160px 0;
   left: 50%;
   top: 128px;
   margin: auto;
@@ -46,19 +46,25 @@ font-size: 3rem;
 }
 
 @media only screen and (max-width: 728px) {
-    .team_intro_container {
-width: 90%;
-padding: 126px 0 0 0;
-    }
-    .team_intro {
-        padding: 32px;
-        font-size: 3rem;
-    }
-    
-    
-  .team_module {
-    width: 90%;
+  .team_intro_container {
+    width: 100%;
+    padding: 120px 0 0 0;
+  }
+  .team_intro {
+    padding: 32px;
+    font-size: 2.2rem;
+  }
 
-    grid-template-columns: auto auto;
+  .team_module {
+    width: 100%;
+    padding: 32px 0 80px 0;
+    grid-template-columns: auto;
+
+  }
+  .team_module_child {
+    background-color: $backgroundColor;
+    color: $bodyColor;
+    font-size: 0.9rem;
+    padding: 16px 32px 16px 32px;
   }
 }
