@@ -29,20 +29,13 @@ fields:
     min: 
     max: 
   label: Design
-- name: events
+- name: publicity_events
   type: list
   config:
     use_select: false
     min: 
     max: 
-  label: Events
-- name: public_relations
-  type: list
-  config:
-    use_select: false
-    min: 
-    max: 
-  label: Public Relations
+  label: Publicity + Events
 - name: media
   type: list
   config:
