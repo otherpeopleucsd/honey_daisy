@@ -45,4 +45,28 @@ html { font-family: sans-serif; scroll-snap-type: mandatory; scroll-snap-points-
 
 @font-face { font-family: "ogg"; src: url("../assets/fonts/Ogg-Italic.woff2") format("woff2"), url("../assets/fonts/Ogg-Italic.woff") format("woff"), url("../assets/fonts/Ogg Roman.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
+.team_intro_container { font-family: 'Cardo', serif; font-style: italic; font-size: 3rem; position: relative; margin: auto; width: 80%; color: var(--light-text-color); padding: 168px 0 0 0; }
+
+.team_intro { padding: 32px; }
+
+.team_module { width: 80%; display: grid; grid-template-columns: auto auto auto; grid-gap: 1px; padding: 84px 0 84px 0; left: 50%; top: 128px; margin: auto; }
+
+.team_module ul { list-style-type: none; margin: 0; padding: 0; }
+
+.team_module li { margin: 10px 0 10px 0; }
+
+.team_module_child { background-color: var(--background-color); color: var(--light-text-color); font-size: 0.9rem; padding: 32px; }
+
+@media only screen and (max-width: 728px) { .team_intro_container { width: 90%; padding: 126px 0 0 0; }
+  .team_intro { padding: 32px; font-size: 3rem; }
+  .team_module { width: 90%; grid-template-columns: auto auto; } }
+
+footer { font-size: 0.9rem; position: relative; margin: auto; width: 100%; color: var(--background-color); background-color: var(--light-text-color); padding: 42px 0 42px 0; text-align: center; }
+
+.footer_module { padding: 32px; }
+
+.footer_module i { font-size: 1.2rem; padding: 12px; color: var(--background-color); }
+
+.footer_module a { text-decoration: none; }
+
 /*# sourceMappingURL=main.css.map */

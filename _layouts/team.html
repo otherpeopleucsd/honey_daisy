@@ -1,28 +1,96 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
-  <head>
+
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>{{ page.title }} - {{ site.title }}</title>
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
     <script src="https://kit.fontawesome.com/b7dcab30d5.js" crossorigin="anonymous"></script>
 
-  </head>
-  <body>
+</head>
+
+<body>
     {% include header.html %}
     {{ content}}
 
-        {% if page.about %}
-        <div class="post_module_child">
-            <h3>about</h3>
-            <p>
-                {{ page.about }}
-            </p>
+    <div class="team_intro_container">
+        <div class="team_intro">We at Other People are aiming to inspire creative expression on students from all disciplines through
+            the inception of UC San Diego's first literary magazine.</div>
+
+    </div>
+
+
+    <div class="team_module">
+
+
+
+
+        <!-- EDITOR-IN-CHIEF -->
+        <div class="team_module_child">
+            <ul>
+                <h3>Editor in Chief</h3>
+                {% for editor-in-chief in page.editor-in-chief %}
+                <li>{{ editor-in-chief }}</li>
+                {% endfor %}
+            </ul>
         </div>
-        {% endif %}
 
-  </body>
+        <!-- EDITORIAL -->
+        <div class="team_module_child">
+            <ul>
+                <h3>Editorial</h3>
+                {% for editorial in page.editorial %}
+                <li>{{ editorial }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <!-- DESIGN -->
+        <div class="team_module_child">
+            <ul>
+                <h3>Design</h3>
+                {% for design_team in page.design_team %}
+                <li>{{ design_team }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <!-- EVENTS -->
+        <div class="team_module_child">
+            <ul>
+                <h3>Events</h3>
+                {% for events in page.events %}
+                <li>{{ events }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <!-- MEDIA -->
+        <div class="team_module_child">
+            <ul>
+                <h3>Media</h3>
+                {% for media in page.media %}
+                <li>{{ media }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <!-- FINANCE -->
+        <div class="team_module_child">
+            <ul>
+                <h3>Finance</h3>
+                {% for finance in page.finance %}
+                <li>{{ finance }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+    </div>
+
+
+    {% include footer.html %}
+
+</body>
+
 </html>
-
-
-
