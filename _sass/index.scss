@@ -1,0 +1,86 @@
+html {
+	font-family: sans-serif;
+	scroll-snap-type: mandatory;
+	scroll-snap-points-y: repeat(100vh);
+	scroll-snap-type: y mandatory;
+}
+
+
+
+.landing {
+  font-family: 'Cardo', serif;
+  font-style: italic;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  font-size: $h1;
+  z-index: 1;
+  text-align: center;
+  background-color: $backgroundColor;
+// text-transform: uppercase;
+scroll-snap-align: start;
+}
+
+.landing_content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.blank {
+  width: 100vw;
+  margin-bottom: 100vh;
+  scroll-snap-align: start;
+
+}
+
+.contact {
+    background-color: $bodyColor;
+    color: $backgroundColor;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    pointer-events: auto;
+    text-align: justify;
+    text-align: center;
+}
+
+
+
+.contact_child {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    i {
+        font-size: 1.2rem;
+        padding: 12px;
+        color: $backgroundColor;
+    }
+    a {
+      text-decoration: none;
+    }
+}
+
+
+@media only screen and (max-width: 728px) {
+  .landing {
+    font-size: 2rem;
+  }
+
+}
+
+
+
+
+
+
+
+
