@@ -4,9 +4,12 @@
 // }
 
 .team_intro_container {
+
   font-family: "Cardo", serif;
-  font-style: italic;
-  font-size: 3rem;
+  // font-style: italic;
+line-height: 100px;
+  font-size: $h1;
+  line-height: 68px;
   position: relative;
   margin: auto;
   width: 80%;
@@ -49,10 +52,12 @@
   .team_intro_container {
     width: 100%;
     padding: 120px 0 0 0;
+    line-height: 48px;
+
   }
   .team_intro {
     padding: 32px;
-    font-size: 2.2rem;
+    font-size: 2.5rem;
   }
 
   .team_module {
@@ -66,5 +71,18 @@
     color: $bodyColor;
     font-size: 0.9rem;
     padding: 16px 32px 16px 32px;
+  }
+}
+
+
+@media only screen and (max-width: 1024px) and (min-width: 729px) {
+  .team_intro_container {
+
+    padding: 128px 0 0 0;
+  }
+  .team_module {
+    padding: 40px 0 88px 0;
+    grid-template-columns: auto auto;
+
   }
 }
