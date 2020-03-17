@@ -1,3 +1,4 @@
-url: "https://otherpeopleucsd.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "/honey_daisy" # the subpath of your site, e.g. /blog
+url: "https://otherpeople.sd" # the base hostname & protocol for your site, e.g. http://example.com
 title: "other people" # the name of your site, e.g. ACME Corp.
+future: true
+published: true
