@@ -7,11 +7,15 @@ editor-in-chief:
 - Montanna Harling
 editorial:
 - Sydney Kessler — Editor at Large
-- Amy Cheng
-- Cathy Huang
-- Chloe Esser
-- Stephanie Duncan
-- Zoe Wong
+- Abigail Hora — Content
+- Erin Chun — Content
+- Sanjana Dha. — Content
+- Jasmine Torres — Content
+- Amy Cheng — Editorial
+- Cathy Huang — Editorial
+- Chloe Esser — Editorial
+- Stephanie Duncan — Editorial
+- Zoe Wong — Editorial
 design_team:
 - Geraldine Wambersie — Co-Director
 - Eunsoo Lee — Co-Director
@@ -26,8 +30,16 @@ events:
 public_relations: []
 media:
 - Ashley Hirao — Director
+- Makayla Lawr.
 - Samuel Cabrera
 finance:
 - Isaac Kopstein
+publicity_events:
+- Lisa Pham — Events
+- Abigail Koorn. — Events
+- Ryan Roden — Events
+- Sara Shor — PR
+- Ruby Hays — PR
+- Valeria Castro — PR
 
 ---
