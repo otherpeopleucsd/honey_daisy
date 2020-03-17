@@ -25,9 +25,6 @@ design_team:
 - Kelly Tran
 - Kristy Lee
 - Zhilin Li
-events:
-- Janelle Kim — Director
-public_relations: []
 media:
 - Ashley Hirao — Director
 - Makayla Lawr.
