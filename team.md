@@ -3,13 +3,13 @@ layout: team
 title: team
 team: []
 editor-in-chief:
-- Montanna Harling
 - Nicole Lopez
+- Montanna Harling
 editorial:
 - Sydney Kessler — Editor at Large
 design_team:
-- Eunsoo Lee — Co-Director
 - Geraldine Wambersie — Co-Director
+- Eunsoo Lee — Co-Director
 - Jack Yang — Webmaster
 events:
 - Janelle Kim — Director
