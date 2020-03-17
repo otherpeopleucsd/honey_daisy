@@ -35,6 +35,7 @@ media:
 finance:
 - Isaac Kopstein
 publicity_events:
+- Janelle Kim — Director
 - Lisa Pham — Events
 - Abigail Koorn. — Events
 - Ryan Roden — Events
