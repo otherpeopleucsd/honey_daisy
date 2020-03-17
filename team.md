@@ -8,8 +8,9 @@ editor-in-chief:
 editorial:
 - Sydney Kessler — Editor at Large
 design_team:
-- Eunsoo Lee — Co_Director
-- Geraldine Wambersie — Co_Director
+- Eunsoo Lee — Co-Director
+- Geraldine Wambersie — Co-Director
+- Jack Yang — Webmaster
 events:
 - Janelle Kim — Director
 public_relations: []
