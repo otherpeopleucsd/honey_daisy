@@ -9,11 +9,12 @@ header {
   a {
       font-size: $p;
       color: $bodyColor;
-      opacity: .5;
+
+      text-decoration: none;
   }
   a:hover {
       cursor: pointer;
-      opacity: 1;
+      opacity: .5;
   }
 }
 
@@ -22,6 +23,8 @@ header {
     text-align: center;
     svg {
         width: 2.5rem;
+        fill: $bodyColor;
+        opacity: 1;
     }
 }
 

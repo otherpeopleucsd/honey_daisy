@@ -12,7 +12,14 @@
     {% include header.html %}
     {{ content}}
 
-    {% include landing.html %}
+        {% if page.about %}
+        <div class="post_module_child">
+            <h3>about</h3>
+            <p>
+                {{ page.about }}
+            </p>
+        </div>
+        {% endif %}
 
   </body>
 </html>
