@@ -13,3 +13,5 @@ fields:
   config:
     maxSize: 250
   label: Featured Image
+pages:
+- index.md
