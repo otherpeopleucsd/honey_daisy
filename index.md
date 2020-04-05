@@ -1,5 +1,5 @@
 ---
 layout: index
-title: "intro"
----
+title: Home
 
+---
