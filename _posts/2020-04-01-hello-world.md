@@ -1,7 +1,7 @@
 ---
 category: Fiction
 title: Girls of the Limberlost
-contributor: Sakura Im
+contributor: Savannah Munoz
 date: 2020-04-01 07:00:00 +0000
 layout: Post
 
