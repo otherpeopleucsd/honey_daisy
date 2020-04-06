@@ -1,6 +1,6 @@
 ---
 layout: team
-title: team
+title: Team
 team: []
 editor-in-chief:
 - Nicole Lopez
