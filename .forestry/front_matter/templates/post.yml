@@ -24,3 +24,4 @@ fields:
     display_utc: false
 pages:
 - _posts/2020-04-05-untitled-ipsum.md
+- _posts/lorem-ipsum.md
