@@ -1,6 +1,6 @@
 ---
 layout: index
 title: Home
-featured: "/uploads/DSC_1704-01.jpeg"
+featured: "/uploads/IMG_1658.jpg"
 
 ---
