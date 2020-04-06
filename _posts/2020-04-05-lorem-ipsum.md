@@ -7,9 +7,9 @@ layout: Post
 thumb: ''
 
 ---
-To Cornell University and Liberty College,
+To Cornell University and Liberty College,<br>(you know who you are)
 
-(you know who you are)<br>I break people’s hearts but they don’t break mine.
+I break people’s hearts but they don’t break mine.
 
 I had my black hair whipping back in the wind at dusk. Do not trail behind me, I warn you dying stars, because you don’t know where this mind has been before settling into this tame body. Sometimes it shows, in a jerk of the finger, a twitch of the ear, or the annoyed twisting and turnings of the neck. It’s there, a wild soul that had to be bolted down to flesh.
 
