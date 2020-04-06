@@ -3,7 +3,7 @@ title: 'With Liqour '
 contributor: Susan Hou
 date: 2020-04-05 07:00:00 +0000
 category: Fiction
-layout: post
+layout: Post
 
 ---
 To Cornell University and Liberty College,
