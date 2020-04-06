@@ -1,4 +1,24 @@
 ---
 label: Post
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: contributor
+  type: text
+  config:
+    required: false
+  label: Contributor
+  description: Writers, artists, etc.
+- name: date
+  type: datetime
+  label: Date
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
