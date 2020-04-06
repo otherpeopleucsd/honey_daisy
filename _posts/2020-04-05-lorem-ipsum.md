@@ -4,13 +4,12 @@ contributor: Susan Hou
 date: 2020-04-05 07:00:00 +0000
 category: Fiction
 layout: Post
+thumb: ''
 
 ---
 To Cornell University and Liberty College,
 
-(you know who you are)
-
-I break people’s hearts but they don’t break mine.
+(you know who you are)<br>I break people’s hearts but they don’t break mine.
 
 I had my black hair whipping back in the wind at dusk. Do not trail behind me, I warn you dying stars, because you don’t know where this mind has been before settling into this tame body. Sometimes it shows, in a jerk of the finger, a twitch of the ear, or the annoyed twisting and turnings of the neck. It’s there, a wild soul that had to be bolted down to flesh.
 
@@ -26,6 +25,4 @@ I break people’s hearts, but they don’t break mine?
 
 Whatever. A toast to this cold air.
 
-Signed,
-
-With Liquor
+Signed,<br>With Liquor
