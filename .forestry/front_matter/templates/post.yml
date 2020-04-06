@@ -27,6 +27,12 @@ fields:
     date_format: 
     time_format: 
     display_utc: false
+- name: thumb
+  type: file
+  config:
+    maxSize: 250
+  label: Thumb
+  description: Image displayed on homepage (for Art only)
 - name: category
   type: select
   default: []
