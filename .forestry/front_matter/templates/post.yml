@@ -22,6 +22,22 @@ fields:
     date_format: 
     time_format: 
     display_utc: false
+- name: category
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - Poetry
+    - Fiction
+    - Non-Fiction
+    - Art
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Category
 pages:
 - _posts/2020-04-03-hello-world.md
 - _posts/2020-04-05-lorem-ipsum.md
