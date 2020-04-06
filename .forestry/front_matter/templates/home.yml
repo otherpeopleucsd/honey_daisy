@@ -15,10 +15,11 @@ fields:
   config:
     required: false
   label: Quarter
+  description: Season YEAR (eg. Spring 2020)
 - name: collection_no_
   type: number
   label: Collection No.
-  description: ''
+  description: Numerical values only
   default: 0
   required: true
   config:
