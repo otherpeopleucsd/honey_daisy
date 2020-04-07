@@ -119,6 +119,7 @@ header a:hover { cursor: pointer; opacity: .5; }
   .recent_works:hover { border-width: 0px 0px 1px 0px; } }
 
 @media only screen and (max-width: 1024px) and (min-width: 729px) { .nav { display: none; }
+  .recent_works_parent { display: grid; grid-template-columns: auto auto; text-align: left; width: 100%; }
   .thumb img { height: 224px; }
   .thumb2 img { height: 160px; } }
 
@@ -126,14 +127,6 @@ header a:hover { cursor: pointer; opacity: .5; }
 
 @keyframes fadeInAnimation { 0% { opacity: 0; }
   100% { opacity: 1; } }
-
-.continents-wrap { float: left; width: 20%; margin: 0 5% 0 0; padding: 0; }
-
-.flowers-wrap { float: left; width: 20%; margin: 0 5% 0 0; padding: 0; position: relative; }
-
-.flowers { float: left; width: 50%; }
-
-.flowers div { float: left; width: 90%; height: 68px; line-height: 68px; padding: 0 5%; background: #eee; margin: 0 0 1px; position: relative; }
 
 @font-face { font-family: "basier_circleregular"; src: url("../../assets/fonts/basiercircle-regular-webfont.eot"); src: url("../../assets/fonts/basiercircle-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/basiercircle-regular-webfont.woff2") format("woff2"), url("../assets/fonts/basiercircle-regular-webfont.woff") format("woff"), url("../../assets/fonts/basiercircle-regular-webfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
