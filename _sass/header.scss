@@ -4,7 +4,7 @@ header {
   fill: $bodyColor;
   display: flex;
   width: 100%;
-  padding: 32px 0 0 0;
+  padding: $block3 0 0 0;
   z-index: 2;
   a {
       font-size: $p;
@@ -37,7 +37,7 @@ header {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     transform: rotate(-90deg);
-    left: 15px;
+    left: 0;
     text-align: center;
     z-index: 2;
 }
@@ -50,9 +50,17 @@ header {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     transform: rotate(90deg);
-    right: 15px;
+    right: 0;
     text-align: center;
     z-index: 2;
+}
+
+.darkmode {
+position: fixed;
+bottom: $block3;
+right: $block3;
+z-index: 3;
+a{ cursor: pointer;}
 }
 
 @media only screen and (max-width: 728px) {

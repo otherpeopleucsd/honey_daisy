@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    <script src="https://kit.fontawesome.com/b7dcab30d5.js" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body>
+
+    {{ content}}
+
+    {% include header.html %}
+
+    <div class="index_body">
+
+      <div class="index_column">
+
+        <div class="title">ART<h3>Much love from University of California, San Diego</h3>
+        </div>
+
+      </div>
+
+      <!-- <div class="featured_image">
+      {% if page.featured %}
+      <img src="{{site.baseurl}}{{ page.featured }}">
+      {% endif %}
+    </div> -->
+
+      <div class="index_column_child">
+        <div class="category">Recent Art</div>
+
+        <div class="recent_works_art_parent">
+          {% for post in site.categories['Art']  limit:2 %}
+          <div class="recent_works">
+            <a href="{{site.baseurl}}{{ post.url }}">
+              <div class="thumb">
+                <img src="{{site.baseurl}}{{ post.thumb }}">
+              </div>
+              <h1>{{ post.title }}</h1>
+              <h3> by {{ post.contributor }}</h3>
+            </a>
+            <h3>
+              <b>{{ post.category }}</b> —
+              <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
+            </h3>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+
+
+      <div class="index_column_child">
+        <div class="category">More Art</div>
+
+        <div class="recent_works_parent">
+          {% for post in site.posts offset:3 %}
+            {% if post.category contains "Art" %}
+
+              <div class="recent_works">
+
+                <a href="{{site.baseurl}}{{ post.url }}">
+
+                  <div class="thumb2">
+                    <img src="{{site.baseurl}}{{ post.thumb }}">
+                  </div>
+
+                  <h1>{{ post.title }}</h1>
+
+                  <h3> by {{ post.contributor }}</h3>
+
+                </a>
+
+                <h3>
+                  <b>{{ post.category }}</b> —
+            <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
+                </h3>
+
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+
+      </div>
+
+      {% include footer.html %}
+
+    </body>
+
+  </html>

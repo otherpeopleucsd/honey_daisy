@@ -6,11 +6,59 @@ $fontSize: 0.85rem;
 $h1: 3.5rem;
 $p: 0.9rem;
 
+h1 {
+  font-family: "basier_circlesemi";
+  font-size: 1.8rem;
+  font-weight: 100;
 
 
 
-html, html[data-theme="light"] { 
-  --background-color: #f8f5f0;
+}
+
+h2 {
+  font-family: "basier_circleregular";
+  font-weight: 300;
+  font-size: 1rem;
+
+
+
+}
+
+h3 {
+  font-family: "basier_circleregular";
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  opacity: 0.5;
+  font-weight: 300;
+ 
+}
+
+h4 {
+  font-family: "basier_circleregular";
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  opacity: 0.2;
+  font-weight: 300;
+ 
+  line-height: 1rem;
+}
+
+// p {
+//   font-family: "basier_circleregular";
+//   font-size: .9rem;
+
+// }
+
+$block1: 8px;
+$block2: 16px;
+$block3: 32px;
+$block4: 64px;
+$block5: 128px;
+$block6: 256px;
+
+html,
+html[data-theme="light"] {
+  --background-color: #F4F6F8;
   --light-text-color: #151515;
   --link-color: rgb(0, 112, 201);
   --main-background-color: rgb(255, 255, 255);
@@ -19,28 +67,29 @@ html, html[data-theme="light"] {
 
 html[data-theme="dark"] {
   --background-color: #151515;
-  --light-text-color:#f8f5f0;
+  --light-text-color: #F4F6F8;
   --link-color: rgb(100, 210, 255);
   --main-background-color: rgb(28, 28, 30);
   --main-text-color: rgb(229, 229, 234);
-	}
+}
 
 @media (prefers-color-scheme: dark) {
-  html, html[data-theme="dark"] {
-  --background-color: #151515;
-  --light-text-color: #f8f5f0;
-  --link-color: rgb(100, 210, 255);
-  --main-background-color: rgb(28, 28, 30);
-  --main-text-color: rgb(229, 229, 234);
-	}
-	
-	html[data-theme="light"] { 
-    --background-color: #f8f5f0;
+  html,
+  html[data-theme="dark"] {
+    --background-color: #151515;
+    --light-text-color: #F4F6F8;
+    --link-color: rgb(100, 210, 255);
+    --main-background-color: rgb(28, 28, 30);
+    --main-text-color: rgb(229, 229, 234);
+  }
+
+  html[data-theme="light"] {
+    --background-color: #F4F6F8;
     --light-text-color: #151515;
     --link-color: rgb(0, 112, 201);
     --main-background-color: rgb(255, 255, 255);
     --main-text-color: rgb(51, 51, 51);
-	}
+  }
 }
 
 body {
@@ -49,4 +98,5 @@ body {
   font-family: $bodyFont;
   margin: 0;
   padding: 0;
+
 }

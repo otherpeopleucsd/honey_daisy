@@ -3,34 +3,15 @@
 //   border-width: 1px;
 // }
 
-.team_intro_container {
-
-  font-family: "Cardo", serif;
-  // font-style: italic;
-line-height: 100px;
-  font-size: $h1;
-  line-height: 68px;
-  position: relative;
-  margin: auto;
-  width: 80%;
-  color: $bodyColor;
-  padding: 168px 0 0 0;
-}
-
-.team_intro {
-  padding: 32px;
-}
-
 .team_module {
   width: 80%;
   display: grid;
   grid-template-columns: auto auto auto;
   grid-gap: 1px;
+  h3 {
+    font-weight: bold;
+  }
 
-  padding: 80px 0 160px 0;
-  left: 50%;
-  top: 128px;
-  margin: auto;
   ul {
     list-style-type: none;
     margin: 0;
@@ -45,44 +26,31 @@ line-height: 100px;
   background-color: $backgroundColor;
   color: $bodyColor;
   font-size: 0.9rem;
-  padding: 32px;
+  padding-bottom: $block5;
 }
 
 @media only screen and (max-width: 728px) {
-  .team_intro_container {
-    width: 100%;
-    padding: 120px 0 0 0;
-    line-height: 48px;
-
-  }
-  .team_intro {
-    padding: 32px;
-    font-size: 2.5rem;
-  }
-
   .team_module {
-    width: 100%;
+    width: 95%;
+    margin: auto;
+
     padding: 32px 0 80px 0;
     grid-template-columns: auto;
-
   }
   .team_module_child {
     background-color: $backgroundColor;
     color: $bodyColor;
     font-size: 0.9rem;
-    padding: 16px 32px 16px 32px;
+    padding: 16px 0 16px 0;
   }
 }
 
-
 @media only screen and (max-width: 1024px) and (min-width: 729px) {
   .team_intro_container {
-
     padding: 128px 0 0 0;
   }
   .team_module {
     padding: 40px 0 88px 0;
     grid-template-columns: auto auto;
-
   }
 }

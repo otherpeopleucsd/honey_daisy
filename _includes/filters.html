@@ -1,0 +1,102 @@
+<div class="filter">
+    <div class="checkbox">
+        <label><input type="checkbox" rel="canada" onchange="change()" />Poetry</label>
+    </div>
+    <div class="checkbox">
+        <label><input type="checkbox" rel="china" onchange="change()" />Fiction</label>
+    </div>
+    <div class="checkbox">
+        <label><input type="checkbox" rel="usa" onchange="change()" />USA</label>
+    </div>
+    <div class="checkbox">
+        <label><input type="checkbox" rel="india" onchange="change()" />India</label>
+    </div>
+</div>
+
+<div class="result">
+
+
+
+    
+    <div class="canada">
+        <div class="recent_works_parent">
+
+            {% for post in site.categories['Poetry']   limit:3 %}
+            <div class="recent_works">
+                <a href="{{site.baseurl}}{{ post.url }}">
+                    <h1>{{ post.title }}</h1>
+                    <h3> by {{ post.contributor }}</h3>
+                </a>
+                <h3>
+                    <b>{{ post.category }}</b> —
+                    <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
+                </h3>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+
+
+    <div class="china">
+
+        <div class="recent_works_parent">
+            {% for post in site.categories['Fiction']   limit:4 %}
+            <div class="recent_works">
+                <a href="{{site.baseurl}}{{ post.url }}">
+                    <h1>{{ post.title }}</h1>
+                    <h3> by {{ post.contributor }}</h3>
+                </a>
+                <h3>
+                    <b>{{ post.category }}</b> —
+                    <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
+                </h3>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="usa">
+        <h1>USA</h1>
+        <h2>Micheal</h2>
+    </div>
+    <div class="india">
+        <h1>India</h1>
+        <h2>Alan</h2>
+    </div>
+    <div class="india">
+        <h1>India</h1>
+        <h2>Alan2</h2>
+    </div>
+</div>
+
+
+
+
+<script>
+
+
+    function change() {
+        var checkboxes = document.getElementsByClassName('checkbox');
+        var chekboxInputs = Array.from(checkboxes).map(a => a.querySelector('input'));
+        var allAreUnselected = chekboxInputs.every(function (elem) {
+            return !elem.checked;
+        });
+        if (allAreUnselected) {
+            chekboxInputs.forEach(function (input) {
+                Array.from(document.querySelectorAll("." + input.getAttribute("rel"))).forEach(function (item) {
+                    item.style.display = 'block';
+                });
+            });
+        }
+        else {
+            chekboxInputs.forEach(function (input) {
+                Array.from(document.querySelectorAll("." + input.getAttribute("rel"))).forEach(function (item) {
+                    item.style.display = input.checked ? 'block' : 'none';
+                });
+            });
+        }
+    }
+    change();
+
+</script>

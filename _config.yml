@@ -1,4 +1,4 @@
 url: "https://otherpeoplesd.com" # the base hostname & protocol for your site, e.g. http://example.com
-title: "other people" # the name of your site, e.g. ACME Corp.
-future: true
+title: "Other People" # the name of your site, e.g. ACME Corp.
+future: false
 published: true

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>Girls of the Limberlost - other people</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script src="https://kit.fontawesome.com/b7dcab30d5.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+
+  
+
+
+<div class="nav">
+
+    <h1>
+        <a href="http://localhost:4000">Home</a>
+        <hr>
+        /
+        <hr>
+        <a href="http://localhost:4000/poetry">Poetry</a>
+        <hr>
+        <a href="http://localhost:4000/fiction">Fiction</a>
+        <hr>
+        <a href="http://localhost:4000/nonfiction">Nonfiction</a>
+        <hr>
+        <a href="http://localhost:4000/art">Art</a>
+      
+      <!-- <hr>
+      /
+      <hr>
+      <a>Events</a>
+      <hr> -->
+
+
+    </h1>
+  </div>
+
+  <div class= "darkmode">
+
+  <a id="theme-toggle" onclick="modeSwitcher()"></a>
+</div>
+
+<!-- <div class="side_text_left">collection no.1</div>
+<div class="side_text_right">collection no.1</div> -->
+
+<script>
+  // this checks whether system Dark Mode is set 
+let systemInitiatedDark = window.matchMedia("(prefers-color-scheme: dark)"); 
+// this checks for session storage telling to override
+// the system preferences 
+let theme = sessionStorage.getItem('theme');
+
+
+if (systemInitiatedDark.matches) {
+	document.getElementById("theme-toggle").innerHTML = "Light Mode";
+} else {
+	document.getElementById("theme-toggle").innerHTML = "Dark Mode";
+}
+
+
+function prefersColorTest(systemInitiatedDark) {
+  if (systemInitiatedDark.matches) {
+  	document.documentElement.setAttribute('data-theme', 'dark');		
+   	document.getElementById("theme-toggle").innerHTML = "Light Mode";
+   	// this clears the session storage 
+   	sessionStorage.setItem('theme', '');
+  } else {
+  	document.documentElement.setAttribute('data-theme', 'light');
+    document.getElementById("theme-toggle").innerHTML = "Dark Mode";
+    sessionStorage.setItem('theme', '');
+  }
+}
+systemInitiatedDark.addListener(prefersColorTest);
+
+
+function modeSwitcher() {
+// it's important to check for overrides again 
+	let theme = sessionStorage.getItem('theme');
+	// checks if reader selected Dark Mode 
+	if (theme === "dark") {
+		document.documentElement.setAttribute('data-theme', 'light');
+		sessionStorage.setItem('theme', 'light');
+		document.getElementById("theme-toggle").innerHTML = "Dark Mode";
+		// checks if reader selected Light Mode 
+	}	else if (theme === "light") {
+		document.documentElement.setAttribute('data-theme', 'dark');
+		sessionStorage.setItem('theme', 'dark');
+		document.getElementById("theme-toggle").innerHTML = "Light Mode";
+		// checks if system set Dark Mode 
+	} else if (systemInitiatedDark.matches) {	
+		document.documentElement.setAttribute('data-theme', 'light');
+		sessionStorage.setItem('theme', 'light');
+		document.getElementById("theme-toggle").innerHTML = "Dark Mode";
+		// the only option left is system set Light Mode
+	} else {
+		document.documentElement.setAttribute('data-theme', 'dark');
+		sessionStorage.setItem('theme', 'dark');
+		document.getElementById("theme-toggle").innerHTML = "Light Mode";
+	}
+}
+
+if (theme === "dark") {
+	document.documentElement.setAttribute('data-theme', 'dark');
+	sessionStorage.setItem('theme', 'dark');
+	document.getElementById("theme-toggle").innerHTML = "Light Mode";
+} else if (theme === "light") {
+	document.documentElement.setAttribute('data-theme', 'light');
+	sessionStorage.setItem('theme', 'light');
+	document.getElementById("theme-toggle").innerHTML = "Dark Mode";
+}
+</script>
+
+<div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+
+        <?xml version="1.0" encoding="utf-8"?>
+        <!-- Generator: Adobe Illustrator 24.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1200 1200" style="enable-background:new 0 0 1200 1200;" xml:space="preserve">
+
+            <path class="st0" d="M669.2,600.3l516.4-516.4c19.1-19.1,19.1-50.1,0-69.3c-19.1-19.1-50.2-19.1-69.3,0L599.9,531.1L83.5,14.6
+	c-19.1-19.1-50.2-19.1-69.3,0c-19.1,19.1-19.1,50.1,0,69.3l516.4,516.4L14.3,1116.8c-19.1,19.1-19.1,50.2,0,69.3
+	c9.6,9.6,22.1,14.3,34.6,14.3c12.5,0,25.1-4.8,34.6-14.3l516.4-516.4l516.4,516.4c9.6,9.6,22.1,14.3,34.6,14.3
+	c12.5,0,25.1-4.8,34.6-14.3c19.1-19.1,19.1-50.2,0-69.3L669.2,600.3z"/>
+        </svg>
+
+    </a>
+
+    <div class="overlay-content">
+        <h1>
+            <a href="http://localhost:4000">OTHER PEOPLE</a>
+            <h3>Much love from<br>University of California, San Diego</h3>
+            <br>
+        
+        <br><br>
+            <a href="http://localhost:4000/poetry">Poetry</a>
+            <hr>
+            <a href="http://localhost:4000/fiction">Fiction</a>
+            <hr>
+            <a href="http://localhost:4000/nonfiction">Nonfiction</a>
+            <hr>
+            <a href="http://localhost:4000/art">Art</a>
+          <hr>
+            <!-- <hr>
+      /
+      <hr>
+      <a>Events</a>
+      <hr> -->
+
+        </h1>
+
+    </div>
+
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">
+
+    <?xml version="1.0" encoding="utf-8"?>
+    <!-- Generator: Adobe Illustrator 24.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1200 1200" style="enable-background:new 0 0 1200 1200;" xml:space="preserve">
+
+        <g>
+            <circle class="st0" cx="1088.9" cy="111.1" r="111.1"/>
+            <circle class="st0" cx="111.1" cy="111.1" r="111.1"/>
+            <circle class="st0" cx="1088.9" cy="1088.9" r="111.1"/>
+            <circle class="st0" cx="111.1" cy="1088.9" r="111.1"/>
+        </g>
+    </svg>
+
+</span>
+
+<script>
+    function openNav() {
+        document
+            .getElementById("myNav")
+            .style
+            .width = "100%";
+    }
+
+    function closeNav() {
+        document
+            .getElementById("myNav")
+            .style
+            .width = "0%";
+    }
+</script>
+
+  <!-- <div class= "back"><a href="http://localhost:4000">⬅</a></div> -->
+
+  <div class="post_body">
+
+    <div class="post_column">
+
+      <div class="post_title">Girls of the Limberlost<br>
+        <h1>by Savannah Munoz</h1>
+        <h3> <time datetime="">01 April 2020</time> —
+          Fiction</h3>
+      </div>
+
+
+    </div>
+
+    <!-- <div class="featured_image">
+      
+    </div> -->
+
+
+
+
+    <div class="post_content">
+      <h1 id="her-name-was-isabelle">Her Name Was Isabelle</h1>
+
+<p>The Limberlost Swamp is a wetland in Indiana that was drained in the early 20th century. Gene Stratton Porter, an environmentalist and writer, grew up near it and wrote the novel <em>A Girl of the Limberlost.</em></p>
+
+<p>My great grandmother listed it as her favorite book in her 1930s high school yearbook. In her photo, she looks proudly at the camera, one of three Mexican Americans on the page. Two other girls come just before her name. <br /> Esther Sanchez. Francisca Sanchez. Isabelle Savala.</p>
+
+<p>I imagine they were best friends and would walk home with each other after school. They’d stop at the liquor store at the corner and pool their coins together for a snack. The heels of their shoes would go clack-clack-clack against the Los Angeles pavement as they gossiped about the boy from school who won’t stop staring at Isabelle.</p>
+
+<p>Or maybe they didn’t do any of that. Maybe they didn’t even like each other, and I’m just making up an imaginary life for her to make myself feel better about what really happened.</p>
+
+<h1 id="we-met-by-chance">We Met By Chance</h1>
+
+<p>I find her photo on ancestry.com. Someone uploaded a yearbook page from 1936 of their own grandmother, and Isabelle happened to be on it. I stare at her face, searching for myself in her smirk and proud lift of her chin. Who was she?</p>
+
+<h1 id="she-liked-to-do-hair">She Liked To Do Hair</h1>
+
+<p>My mom said that Isabelle was a hairdresser. In Isabelle’s photo, her hair is pin-curled, her eyebrows perfectly drawn, and her lips shaded, probably with red lipstick. I imagine it took her the whole night to get her hair and makeup ready for picture day. I see her in a bathroom, pin-curling each lock of hair, crying out when she messes up a section.</p>
+
+<h1 id="the-rumors-will-live-longer-than-they-did">The Rumors Will Live Longer Than They Did</h1>
+
+<p>Isabelle met my great grandfather, Gérman, in the same high school. I found his 1934 yearbook photo on ancestry.com as well. He is mid-laugh, looking dapper in his white button up and tie. I feel the charisma oozing out of this blurry photo and understand why Isabelle fell in love with him.</p>
+
+<p>In his original Mexican birth record, his name is listed as Gérman, but in this yearbook, he is Herman. A lot of Mexicans anglicized their names in the early 20th century US, so I’m not surprised to see this. I even wonder if the person who wrote out his visa just misheard his mother.</p>
+
+<p>My mom isn’t sure why Isabelle and Gérman separated. The rumor goes that after Isabelle had a mental breakdown and electric shock therapy, he left her and all of their children. He started a new family with a different woman a few cities away and died before my mother was born.</p>
+
+<h1 id="its-not-really-about-the-book">It’s Not Really About The Book</h1>
+
+<p><em>Maybe A Girl of the Limberlost</em> was just an assigned book Isabelle read in class, and when the yearbook committee asked her to list her favorite book, she couldn’t think of any other title. She probably never thought about it again, like most people who forget about the books they read in high school. But Isabelle couldn’t know that her great-granddaughter would cling onto it and try to find her in some white woman’s words. If she did, would she have chosen a different book?</p>
+
+<h1 id="i-find-her-floating-in-filth">I Find Her Floating in Filth</h1>
+
+<p>I like to think we both wander the Limberlost trying to find each other.</p>
+
+<p>As I walk through the forest, I see her in the middle of the swamp. She’s fallen in.</p>
+
+<p>Isabelle lies on her back. Mud is caked around her body. Like she’s been in the swamp so long she’s almost part of it.</p>
+
+<p>Mosquitoes suck on her arms. Beetles crawl across her legs. A lone deer sniffs her hair.</p>
+
+<p>I scream at her to WAKE UP, but she doesn’t move. Her eyes are wide open, and she stares up at the sky. She’s not dead, but she’s not really alive.</p>
+
+<h1 id="i-drag-her-out-of-the-swamp">I Drag Her Out of the Swamp</h1>
+
+<p>Her heart doesn’t beat, but her eyelids flutter. She stares at me and asks,</p>
+
+<p>“Why did you wake me up?”</p>
+
+      <br>
+      <h4>This work belongs to Savannah Munoz ©
+        <br> Copy, reproduction, and modification are not permitted without authorization
+      </h4>
+    </div>
+
+
+
+  </div>
+
+
+
+
+  <div class="index_body">
+
+
+
+
+    <div class="category">Explore</div>
+
+    <div class="recent_works_parent">
+      
+      <div class="recent_works">
+        <a href="/poetry/2020/04/06/at-the-sink.html">
+          <h1>At the Sink</h1>
+          <h3> by Gabriela Schnepp</h3>
+        </a>
+        <h3>
+          <b>Poetry</b> —
+          <time datetime="2020-04-06">06 April 2020</time>
+        </h3>
+      </div>
+      
+      <div class="recent_works">
+        <a href="/poetry/2020/04/03/hello-world.html">
+          <h1>skin</h1>
+          <h3> by Caitlyn Vilar</h3>
+        </a>
+        <h3>
+          <b>Poetry</b> —
+          <time datetime="2020-04-03">03 April 2020</time>
+        </h3>
+      </div>
+      
+
+      
+      <div class="recent_works">
+        <a href="/fiction/2020/04/07/%E7%81%AB.html">
+          <h1>火</h1>
+          <h3> by Ashley Hirao</h3>
+        </a>
+        <h3>
+          <b>Fiction</b> —
+          <time datetime="2020-04-07">07 April 2020</time>
+        </h3>
+      </div>
+      
+      <div class="recent_works">
+        <a href="/fiction/2020/04/07/close-your-eyes.html">
+          <h1>Close Your Eyes</h1>
+          <h3> by Montanna Harling</h3>
+        </a>
+        <h3>
+          <b>Fiction</b> —
+          <time datetime="2020-04-07">07 April 2020</time>
+        </h3>
+      </div>
+      
+
+      
+    </div>
+
+
+  </div>
+
+
+  <footer>
+    <div class="footer_container">
+
+        <div class="footer_intro">
+            © 2020 OTHER PEOPLE
+
+        </div>
+
+        <div class="footer_module">
+                <li>
+                    <a href="" target="blank">
+                   
+                    </a>
+                </li>
+                <li>
+                    <a href="" target="blank">
+                  
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                 
+                    </a>
+                </li>
+        </div>
+
+        <div class="footer_module">
+            <li>
+                <a href="" target="blank">
+                    Submissions
+                </a>
+            </li>
+            <li>
+                <a href="" target="blank">
+                    Newsletter
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:4000/team">
+                    About us
+                </a>
+            </li>
+    </div>
+
+        <div class="footer_module">
+                <li>
+                    <a href="http://facebook.com/otherpeopleucsd" target="blank">
+                        Facebook
+                    </a>
+                </li>
+                <li>
+                    <a href="http://instagram.com/otherpeoplesd" target="blank">
+                        Instagram
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:otherpeoplesd@gmail.com?subject=Hello, Other People">
+                        Contact
+                    </a>
+                </li>
+        </div>
+
+    </div>
+</footer>
+
+</body>
+
+</html>
