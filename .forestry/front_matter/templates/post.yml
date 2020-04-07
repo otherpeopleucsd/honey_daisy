@@ -2,13 +2,6 @@
 label: Post
 hide_body: false
 fields:
-- name: layout
-  type: text
-  config:
-    required: false
-  label: Layout
-  default: Post
-  hidden: true
 - name: title
   type: text
   config:
@@ -20,6 +13,22 @@ fields:
     required: false
   label: Contributor
   description: Writers, artists, etc.
+- name: category
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - Poetry
+    - Fiction
+    - Nonfiction
+    - Art
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Category
 - name: date
   type: datetime
   label: Date
@@ -35,22 +44,13 @@ fields:
     maxSize: 250
   label: Thumb
   description: Image displayed on homepage (for Art only)
-- name: category
-  type: select
-  default: []
+- name: layout
+  type: text
   config:
     required: false
-    options:
-    - Poetry
-    - Fiction
-    - Non-Fiction
-    - Art
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Category
+  label: Layout
+  default: Post
+  hidden: true
 pages:
 - _posts/2020-04-03-hello-world.md
 - _posts/2020-04-05-lorem-ipsum.md
