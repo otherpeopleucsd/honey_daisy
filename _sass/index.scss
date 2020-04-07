@@ -1,6 +1,6 @@
 // * {
 //   border-style: solid;
-//   border-width: 1px;;
+//   border-width: 1px;
 // }
 
 .featured_image {
@@ -54,13 +54,11 @@
 .nav {
   z-index: 2;
   position: fixed;
-
   margin: auto;
-  top: $block2;
   right: $block3;
   height: 0;
   font-family: "basier_circlesemi";
-  line-height: 0.9rem;
+  line-height: 2.8rem;
   text-align: right;
   hr {
     border: none;
@@ -342,14 +340,12 @@
     display: none;
   }
 
-
   .recent_works_parent {
     display: grid;
     grid-template-columns: auto auto;
     text-align: left;
     width: 100%;
   }
-
 
   .thumb {
     img {
@@ -380,19 +376,3 @@
     opacity: 1;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
