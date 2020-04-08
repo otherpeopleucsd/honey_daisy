@@ -4,10 +4,10 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <title>Art - other people</title>
+    <title>Art - Other People</title>
     <link rel="stylesheet" href="/assets/css/main.css">
     <script src="https://kit.fontawesome.com/b7dcab30d5.js" crossorigin="anonymous"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
 
   <body>
@@ -210,26 +210,26 @@ if (theme === "dark") {
         <div class="recent_works_art_parent">
           
           <div class="recent_works">
-            <a href="/art/2020/04/07/surreal-cuba.html">
-              <div class="thumb">
-                <img src="/uploads/10. Surreal Cuba.png">
-              </div>
-              <h1>Surreal Cuba</h1>
-              <h3> by Geraldine Wambersie</h3>
-            </a>
-            <h3>
-              <b>Art</b> —
-              <time datetime="2020-04-07">07 April 2020</time>
-            </h3>
-          </div>
-          
-          <div class="recent_works">
             <a href="/art/2020/04/06/untitled.html">
               <div class="thumb">
                 <img src="/uploads/DSC_1188-01 - Marcin Kierebinski.jpeg">
               </div>
               <h1>I left my heart in Amsterdam</h1>
               <h3> by Marcin Kierebinski</h3>
+            </a>
+            <h3>
+              <b>Art</b> —
+              <time datetime="2020-04-06">06 April 2020</time>
+            </h3>
+          </div>
+          
+          <div class="recent_works">
+            <a href="/art/2020/04/06/skin.html">
+              <div class="thumb">
+                <img src="/uploads/Laura Esbensen_Other People Submission_Skin - Laura Esbensen.jpg">
+              </div>
+              <h1>Skin</h1>
+              <h3> by Laura Esbensen</h3>
             </a>
             <h3>
               <b>Art</b> —
@@ -245,78 +245,6 @@ if (theme === "dark") {
         <div class="category">More Art</div>
 
         <div class="recent_works_parent">
-          
-            
-
-              <div class="recent_works">
-
-                <a href="/art/2020/04/06/untitled.html">
-
-                  <div class="thumb2">
-                    <img src="/uploads/DSC_1188-01 - Marcin Kierebinski.jpeg">
-                  </div>
-
-                  <h1>I left my heart in Amsterdam</h1>
-
-                  <h3> by Marcin Kierebinski</h3>
-
-                </a>
-
-                <h3>
-                  <b>Art</b> —
-            <time datetime="2020-04-06">06 April 2020</time>
-                </h3>
-
-              </div>
-            
-          
-            
-
-              <div class="recent_works">
-
-                <a href="/art/2020/04/06/skin.html">
-
-                  <div class="thumb2">
-                    <img src="/uploads/Laura Esbensen_Other People Submission_Skin - Laura Esbensen.jpg">
-                  </div>
-
-                  <h1>Skin</h1>
-
-                  <h3> by Laura Esbensen</h3>
-
-                </a>
-
-                <h3>
-                  <b>Art</b> —
-            <time datetime="2020-04-06">06 April 2020</time>
-                </h3>
-
-              </div>
-            
-          
-            
-
-              <div class="recent_works">
-
-                <a href="/art/2020/04/06/dissonance.html">
-
-                  <div class="thumb2">
-                    <img src="/uploads/Laura Esbensen_Other People Submission - Laura Esbensen.JPG">
-                  </div>
-
-                  <h1>Dissonance</h1>
-
-                  <h3> by Laura Esbensen</h3>
-
-                </a>
-
-                <h3>
-                  <b>Art</b> —
-            <time datetime="2020-04-06">06 April 2020</time>
-                </h3>
-
-              </div>
-            
           
             
           
@@ -399,7 +327,16 @@ if (theme === "dark") {
 
     </div>
 </footer>
+        <script type="text/javascript">
+    $(document).ready(function () {
+      //Disable full page
+      $("body").on("contextmenu", function (e) {
+        return false;
+      });
 
+
+    });
+  </script>
     </body>
 
   </html>

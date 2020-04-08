@@ -7,7 +7,7 @@
     <title>{{ page.title }} - {{ site.title }}</title>
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
     <script src="https://kit.fontawesome.com/b7dcab30d5.js" crossorigin="anonymous"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
 
   <body>
@@ -89,7 +89,7 @@
       </div>
 
       {% include footer.html %}
-
+      {% include disable_copy.html %}
     </body>
 
   </html>

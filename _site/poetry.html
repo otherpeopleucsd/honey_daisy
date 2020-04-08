@@ -4,10 +4,10 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
-  <title>Poetry - other people</title>
+  <title>Poetry - Other People</title>
   <link rel="stylesheet" href="/assets/css/main.css">
   <script src="https://kit.fontawesome.com/b7dcab30d5.js" crossorigin="anonymous"></script>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -358,7 +358,16 @@ if (theme === "dark") {
 
     </div>
 </footer>
+    <script type="text/javascript">
+    $(document).ready(function () {
+      //Disable full page
+      $("body").on("contextmenu", function (e) {
+        return false;
+      });
 
+
+    });
+  </script>
 
 
 
