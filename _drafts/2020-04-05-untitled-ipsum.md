@@ -1,7 +1,7 @@
 ---
 title: Ode to Stan
 contributor: Kali M.S.
-date: 2020-04-05 07:00:00 +0000
+date: 2020-04-05T07:00:00.000+00:00
 category: Fiction
 layout: Post
 thumb: ''
