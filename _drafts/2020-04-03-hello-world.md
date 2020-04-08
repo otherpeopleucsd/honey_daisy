@@ -1,7 +1,7 @@
 ---
 title: skin
 contributor: Caitlyn Vilar
-date: 2020-04-03 07:00:00 +0000
+date: 2020-04-03T07:00:00.000+00:00
 category: Poetry
 layout: Post
 
