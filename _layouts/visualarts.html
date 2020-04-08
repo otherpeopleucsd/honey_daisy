@@ -20,7 +20,7 @@
 
       <div class="index_column">
 
-        <div class="title">ART<h3>Much love from University of California, San Diego</h3>
+        <div class="title">VISUAL ARTS<h3>Much love from University of California, San Diego</h3>
         </div>
 
       </div>
@@ -32,10 +32,10 @@
     </div> -->
 
       <div class="index_column_child">
-        <div class="category">Recent Art</div>
+        <div class="category">Recent Visual Arts</div>
 
         <div class="recent_works_art_parent">
-          {% for post in site.categories['Art']  limit:2 %}
+          {% for post in site.categories['Visual Arts']  limit:2 %}
           <div class="recent_works">
             <a href="{{site.baseurl}}{{ post.url }}">
               <div class="thumb">
@@ -55,10 +55,10 @@
 
 
       <div class="index_column_child">
-        <div class="category">More Art</div>
+        <div class="category">More Visual Arts</div>
 
         <div class="recent_works_parent">
-          {% for post in site.categories['Art']  offset:2 %}
+          {% for post in site.categories['Visual Arts']  offset:2 %}
 
               <div class="recent_works">
 

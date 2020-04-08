@@ -1,21 +1,21 @@
 header {
     position: fixed;
-  color: $bodyColor;
-  fill: $bodyColor;
-  display: flex;
-  width: 100%;
-  padding: $block3 0 0 0;
-  z-index: 2;
-  a {
-      font-size: $p;
-      color: $bodyColor;
+    color: $bodyColor;
+    fill: $bodyColor;
+    display: flex;
+    width: 100%;
+    padding: $block3 0 0 0;
+    z-index: 2;
+    a {
+        font-size: $p;
+        color: $bodyColor;
 
-      text-decoration: none;
-  }
-  a:hover {
-      cursor: pointer;
-      opacity: .5;
-  }
+        text-decoration: none;
+    }
+    a:hover {
+        cursor: pointer;
+        opacity: 0.5;
+    }
 }
 
 .block {
@@ -27,7 +27,6 @@ header {
         opacity: 1;
     }
 }
-
 
 .side_text_left {
     font-size: $fontSize;
@@ -56,15 +55,30 @@ header {
 }
 
 .darkmode {
-position: fixed;
-bottom: $block3;
-right: $block3;
-z-index: 3;
-a{ cursor: pointer;}
+    position: fixed;
+    bottom: $block3;
+    right: $block3;
+    z-index: 3;
+    background-color: $backgroundColor;
+    a {
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-device-width: 320px),
+    only screen and (min-device-width: 560px) and (max-device-width: 1136px) and (-webkit-min-device-pixel-ratio: 2) {
+    .darkmode {
+ 
+        bottom: $block2;
+        right: $block2;
+
+
+    }
 }
 
 @media only screen and (max-width: 728px) {
-    .side_text_left, .side_text_right{
+    .side_text_left,
+    .side_text_right {
         display: none;
     }
 }

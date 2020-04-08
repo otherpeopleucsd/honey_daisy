@@ -14,15 +14,15 @@
     font-weight: 100;
     color: $backgroundColor;
     h3 {
-        margin-right: $block2;
+        margin-left: $block2;
     }
 }
 
 .overlay-content {
     position: relative;
-    top: $block5;
+    top: $block4;
     width: 100%;
-    text-align: right;
+
     margin-top: 30px;
 }
 
@@ -32,7 +32,7 @@
     color: $backgroundColor;
     display: block;
     transition: 0.3s;
-    margin-right: $block2;
+    margin-left: $block2;
 }
 
 .overlay a:hover,
@@ -43,10 +43,24 @@
 .overlay .closebtn {
     position: absolute;
     top: $block2;
-    right: 0;
+    right: $block2;
 
     width: $block3;
     fill: $backgroundColor;
+}
+
+.nav_title {
+    font-size: 4rem;
+    hyphens: auto;
+    line-height: 4rem;
+}
+
+.nav_column_child {
+    width: 95%;
+    margin: auto;
+    padding-top: $block4;
+    display: grid;
+    grid-template-columns: auto;
 }
 
 span {
@@ -70,7 +84,24 @@ span {
 @media only screen and (max-width: 1024px) and (min-width: 729px) {
     span {
         display: initial;
-    }    
+    }
+
+    .overlay a {
+        text-decoration: none;
+
+        color: $backgroundColor;
+        display: block;
+        transition: 0.3s;
+        margin-left: $block3;
+    }
+
+    .nav_column_child {
+        width: 95%;
+        margin: auto;
+        padding-top: $block4;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
 }
 
 @media screen and (max-height: 450px) {

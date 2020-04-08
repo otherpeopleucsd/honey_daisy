@@ -15,20 +15,22 @@
     </a>
 
     <div class="overlay-content">
+
+        <div class="nav_title">
+            <a href="{{ site.url }}{{ site.baseurl }}">OTHER<br> PEOPLE</a><br>
+
+        </div>
         <h1>
-            <a href="{{ site.url }}{{ site.baseurl }}">OTHER PEOPLE</a>
-            <h3>Much love from<br>University of California, San Diego</h3>
-            <br>
-        
-        <br><br>
+
+            <br><br>
             <a href="{{ site.url }}{{ site.baseurl }}/poetry">Poetry</a>
             <hr>
             <a href="{{ site.url }}{{ site.baseurl }}/fiction">Fiction</a>
             <hr>
             <a href="{{ site.url }}{{ site.baseurl }}/nonfiction">Nonfiction</a>
             <hr>
-            <a href="{{ site.url }}{{ site.baseurl }}/art">Art</a>
-          <hr>
+            <a href="{{ site.url }}{{ site.baseurl }}/visualarts">Visual Arts</a>
+            <hr>
             <!-- <hr>
       /
       <hr>
@@ -36,6 +38,28 @@
       <hr> -->
 
         </h1>
+
+        <div class="nav_column_child">
+            <div class="category">Recent Visual Arts</div>
+
+            <div class="recent_works_art_parent">
+                {% for post in site.categories['Visual Arts'] limit : 2 %}
+                    <div class="recent_works">
+                        <a href="{{site.baseurl}}{{ post.url }}">
+                            <div class="thumb">
+                                <img src="{{site.baseurl}}{{ post.thumb }}">
+                            </div>
+                            <h1>{{ post.title }}</h1>
+                            <h3> by {{ post.contributor }}</h3>
+                        </a>
+                        <h3>
+                            <b>{{ post.category }}</b> —
+            <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
+                        </h3>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
 
     </div>
 

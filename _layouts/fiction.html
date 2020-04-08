@@ -37,28 +37,28 @@
 
 
     <div class="index_column_child">
-    <div class="category">Recent Fiction</div>
+      <div class="category">Recent Fiction</div>
 
-    <div class="recent_works_parent">
-      {% for post in site.categories['Fiction']   limit:3 %}
-      <div class="recent_works">
-        <a href="{{site.baseurl}}{{ post.url }}">
-          <h1>{{ post.title }}</h1>
-          <h3> by {{ post.contributor }}</h3>
-        </a>
-        <h3>
-          <b>{{ post.category }}</b> —
-          <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
-        </h3>
+      <div class="recent_works_parent">
+        {% for post in site.categories['Fiction']   limit:3 %}
+        <div class="recent_works">
+          <a href="{{site.baseurl}}{{ post.url }}">
+            <h1>{{ post.title }}</h1>
+            <h3> by {{ post.contributor }}</h3>
+          </a>
+          <h3>
+            <b>{{ post.category }}</b> —
+            <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
+          </h3>
+        </div>
+        {% endfor %}
       </div>
-      {% endfor %}
-    </div>
     </div>
 
 
     <div class="index_column_child">
       <div class="category">More Fiction</div>
-  
+
       <div class="recent_works_parent">
         {% for post in site.categories['Fiction']   offset:3 %}
         <div class="recent_works">
@@ -73,14 +73,14 @@
         </div>
         {% endfor %}
       </div>
-      </div>
+    </div>
 
 
 
 
 
 
-   
+
 
 
 
@@ -93,7 +93,7 @@
   {% include disable_copy.html %}
 
 
- 
+
 
 
 </body>
