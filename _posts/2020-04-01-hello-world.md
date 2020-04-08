@@ -2,7 +2,7 @@
 category: Fiction
 title: Girls of the Limberlost
 contributor: Savannah Munoz
-date: 2020-04-01 07:00:00 +0000
+date: 2020-04-01T07:00:00.000+00:00
 layout: Post
 thumb: ''
 
