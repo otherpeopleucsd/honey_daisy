@@ -58,8 +58,7 @@
         <div class="category">More Art</div>
 
         <div class="recent_works_parent">
-          {% for post in site.posts offset:3 %}
-            {% if post.category contains "Art" %}
+          {% for post in site.categories['Art']  offset:2 %}
 
               <div class="recent_works">
 
@@ -81,7 +80,7 @@
                 </h3>
 
               </div>
-            {% endif %}
+ 
           {% endfor %}
         </div>
       </div>
