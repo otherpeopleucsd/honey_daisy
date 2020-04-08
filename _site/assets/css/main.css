@@ -225,10 +225,12 @@ span { display: none; width: 32px; position: fixed; top: 16px; right: 16px; z-in
 
 span svg { fill: var(--light-text-color); }
 
+@media only screen and (max-device-width: 320px), only screen and (min-device-width: 560px) and (max-device-width: 1136px) and (-webkit-min-device-pixel-ratio: 2) { .overlay a { margin-left: 8px; } }
+
 @media only screen and (max-width: 728px) { span { display: initial; } }
 
 @media only screen and (max-width: 1024px) and (min-width: 729px) { span { display: initial; }
-  .overlay a { text-decoration: none; color: var(--background-color); display: block; transition: 0.3s; margin-left: 32px; }
+  .overlay a { margin-left: 32px; }
   .nav_column_child { width: 95%; margin: auto; padding-top: 64px; display: grid; grid-template-columns: auto auto; } }
 
 /*# sourceMappingURL=main.css.map */
