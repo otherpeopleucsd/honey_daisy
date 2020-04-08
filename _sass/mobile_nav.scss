@@ -54,7 +54,7 @@
     hyphens: auto;
     line-height: 4rem;
 
-    h3{
+    h3 {
         line-height: 1.5rem;
         font-weight: bold;
     }
@@ -81,14 +81,19 @@ span {
 }
 
 @media only screen and (max-device-width: 320px),
-  only screen and (min-device-width: 560px) and (max-device-width: 1136px) and (-webkit-min-device-pixel-ratio: 2) {
+    only screen and (min-device-width: 560px) and (max-device-width: 1136px) and (-webkit-min-device-pixel-ratio: 2) {
     .overlay a {
         margin-left: $block1;
-
     }
 
 
-  }
+
+
+    .nav_column_child {
+        width: 93%;
+  
+    }
+}
 
 @media only screen and (max-width: 728px) {
     span {
@@ -101,12 +106,18 @@ span {
         display: initial;
     }
 
+    .nav_title {
+        h3 {
+            margin-left: $block3;
+        }
+    }
+
     .overlay a {
         margin-left: $block3;
     }
 
     .nav_column_child {
-        width: 95%;
+        width: 92%;
         margin: auto;
         padding-top: $block4;
         display: grid;
