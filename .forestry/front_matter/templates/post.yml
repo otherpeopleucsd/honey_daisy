@@ -53,12 +53,9 @@ fields:
   default: Post
   hidden: true
 pages:
-- _posts/2020-04-03-hello-world.md
-- _posts/2020-04-05-lorem-ipsum.md
-- _posts/2020-04-05-untitled-ipsum.md
+- _posts/2020-04-05-with-liqour.md
 - _posts/2020-04-06-boys-night.md
 - _posts/2020-04-06-dissonance.md
 - _posts/2020-04-06-skin.md
-- _posts/2020-04-06-untitled.md
 - _posts/2020-04-07-monotony.md
 - _posts/2020-04-07-surreal-cuba.md
