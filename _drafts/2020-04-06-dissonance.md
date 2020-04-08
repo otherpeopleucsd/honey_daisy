@@ -1,5 +1,5 @@
 ---
-category: Art
+category: Visual Art
 layout: Post
 title: Dissonance
 contributor: Laura Esbensen
