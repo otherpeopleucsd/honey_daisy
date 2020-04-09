@@ -14,19 +14,15 @@
 
   {{ content}}
 
-
   {% include header.html %}
 
+  <!-- LANDING TITLE -->
   <div class="index_body">
-
     <div class="index_column">
-
       <div class="title">OTHER<br> PEOPLE<br>
         <h3>{{ page.quarter }} — Collection No. {{ page.collection_no_ }}</h3>
         <h3>Much love from University of California, San Diego</h3>
       </div>
-
-
     </div>
 
     <!-- <div class="featured_image">
@@ -36,17 +32,13 @@
     </div> -->
 
 
-
-
+    <!-- RECENT VISUAL ARTS HEADER -->
     <div class="index_column_child">
       <div class="category">Recent Visual Arts</div>
-
-
       <h1>Nothing yet!<br>Check back soon for spring updates 👻 </h1>
-
-
-
       <div class="recent_works_art_parent">
+
+        <!-- VISUAL ARTS -->
         {% for post in site.categories['Visual Arts']  limit:2 %}
         <div class="recent_works">
           <a href="{{site.baseurl}}{{ post.url }}">
@@ -65,18 +57,12 @@
       </div>
     </div>
 
-
-
-
-
-
-
-
+    <!-- RECENT LITERATURE HEADER -->
     <div class="index_column_child">
       <div class="category">Recent Literature</div>
-
       <div class="recent_works_parent">
 
+        <!-- POETRY -->
         {% for post in site.categories['Poetry']   limit:3 %}
         <div class="recent_works">
           <a href="{{site.baseurl}}{{ post.url }}">
@@ -90,7 +76,7 @@
         </div>
         {% endfor %}
 
-
+        <!-- FICTION -->
         {% for post in site.categories['Fiction']   limit:4 %}
         <div class="recent_works">
           <a href="{{site.baseurl}}{{ post.url }}">
@@ -104,7 +90,7 @@
         </div>
         {% endfor %}
 
-
+        <!-- NONFICTION -->
         {% for post in site.categories['Nonfiction']   limit:3 %}
         <div class="recent_works">
           <a href="{{site.baseurl}}{{ post.url }}">
@@ -117,35 +103,20 @@
           </h3>
         </div>
         {% endfor %}
-
       </div>
     </div>
-
-
 
   </div>
 
 
   {% include footer.html %}
 
-
-
-
-
-
-
-
-
-
+  <!-- THIS DISABLES RIGHT CLICK -->
+  {% include disable_copy.html %}
+  
   <!-- {% include filters.html %} -->
 
 
-
-
-
-
-
-  {% include disable_copy.html %}
 
 
 

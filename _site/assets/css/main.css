@@ -27,6 +27,14 @@ header a:hover { cursor: pointer; opacity: 0.5; }
 
 .block svg { width: 2.5rem; fill: var(--light-text-color); opacity: 1; }
 
+.nav { z-index: 2; position: fixed; margin: auto; right: 32px; height: 0; font-family: "basier_circlesemi"; line-height: 2.8rem; text-align: right; }
+
+.nav hr { border: none; height: 0px; color: #787878; background-color: #787878; }
+
+.nav a { text-decoration: none; color: var(--light-text-color); }
+
+.nav a:hover { text-decoration: line-through; cursor: pointer; }
+
 .side_text_left { font-size: 0.85rem; margin: 0; position: fixed; top: 50%; -ms-transform: translateY(-50%); transform: translateY(-50%); transform: rotate(-90deg); left: 0; text-align: center; z-index: 2; }
 
 .side_text_right { font-size: 0.85rem; margin: 0; position: fixed; top: 50%; -ms-transform: translateY(-50%); transform: translateY(-50%); transform: rotate(90deg); right: 0; text-align: center; z-index: 2; }
@@ -35,7 +43,8 @@ header a:hover { cursor: pointer; opacity: 0.5; }
 
 .darkmode a { cursor: pointer; }
 
-@media only screen and (max-device-width: 320px), only screen and (min-device-width: 560px) and (max-device-width: 1136px) and (-webkit-min-device-pixel-ratio: 2) { .darkmode { bottom: 16px; right: 16px; } }
+@media only screen and (max-device-width: 320px), only screen and (min-device-width: 560px) and (max-device-width: 1136px) and (-webkit-min-device-pixel-ratio: 2) { .darkmode { bottom: 16px; right: 16px; }
+  .nav { display: none; position: relative; bottom: 0; } }
 
 @media only screen and (max-width: 728px) { .side_text_left, .side_text_right { display: none; } }
 
@@ -50,14 +59,6 @@ header a:hover { cursor: pointer; opacity: 0.5; }
 .title { font-family: "basier_circlesemi"; font-size: 8rem; text-align: left; line-height: 8rem; margin-left: -8px; padding-bottom: 128px; }
 
 .title h3 { line-height: 1.5rem; margin-left: 8px; font-weight: bold; }
-
-.nav { z-index: 2; position: fixed; margin: auto; right: 32px; height: 0; font-family: "basier_circlesemi"; line-height: 2.8rem; text-align: right; }
-
-.nav hr { border: none; height: 0px; color: #787878; background-color: #787878; }
-
-.nav a { text-decoration: none; color: var(--light-text-color); }
-
-.nav a:hover { text-decoration: line-through; cursor: pointer; }
 
 .category { padding-bottom: 32px; font-family: "basier_circleregular"; font-size: 0.8rem; text-transform: uppercase; opacity: 0.5; font-weight: bold; }
 
@@ -104,8 +105,7 @@ header a:hover { cursor: pointer; opacity: 0.5; }
 .contact_child a { text-decoration: none; }
 
 @media only screen and (max-device-width: 320px), only screen and (min-device-width: 560px) and (max-device-width: 1136px) and (-webkit-min-device-pixel-ratio: 2) { .title { margin-top: 128px; font-size: 4rem; hyphens: auto; line-height: 4rem; }
-  .index_body { width: 90%; margin: auto; }
-  .nav { display: none; position: relative; bottom: 0; } }
+  .index_body { width: 90%; margin: auto; } }
 
 @media only screen and (max-width: 728px) and (min-width: 321px) { .index_column { display: grid; grid-template-columns: auto; width: 95%; margin: auto; }
   .title { margin-top: 128px; font-size: 5rem; hyphens: auto; line-height: 5rem; }
@@ -126,6 +126,7 @@ header a:hover { cursor: pointer; opacity: 0.5; }
 
 @media only screen and (max-width: 1024px) and (min-width: 729px) { .nav { display: none; }
   .recent_works_parent { display: grid; grid-template-columns: auto auto; text-align: left; width: 100%; }
+  .title { margin-top: 8px; font-size: 8rem; hyphens: auto; line-height: 8rem; }
   .thumb img { height: 224px; }
   .thumb2 img { height: 160px; } }
 

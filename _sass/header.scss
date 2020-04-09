@@ -28,6 +28,33 @@ header {
     }
 }
 
+
+.nav {
+    z-index: 2;
+    position: fixed;
+    margin: auto;
+    right: $block3;
+    height: 0;
+    font-family: "basier_circlesemi";
+    line-height: 2.8rem;
+    text-align: right;
+    hr {
+      border: none;
+      height: 0px;
+      color: rgb(120, 120, 120);
+      background-color: rgb(120, 120, 120);
+    }
+    a {
+      text-decoration: none;
+      color: $bodyColor;
+    }
+  
+    a:hover {
+      text-decoration: line-through;
+      cursor: pointer;
+    }
+  }
+
 .side_text_left {
     font-size: $fontSize;
     margin: 0;
@@ -74,6 +101,12 @@ header {
 
 
     }
+
+    .nav {
+        display: none;
+        position: relative;
+        bottom: 0;
+      }
 }
 
 @media only screen and (max-width: 728px) {

@@ -8,14 +8,11 @@
   height: 40vh;
   object-fit: cover;
   overflow: hidden;
-
   img {
     height: 100%;
     width: 100%;
-
     display: block;
     margin: auto;
-
     object-fit: cover;
     opacity: 1;
   }
@@ -31,7 +28,6 @@
 .index_body {
   margin: auto;
   width: 95%;
-
   position: relative;
   padding: $block2 0 $block4 0;
 }
@@ -43,37 +39,10 @@
   line-height: 8rem;
   margin-left: -$block1;
   padding-bottom: $block5;
-
   h3 {
     line-height: 1.5rem;
     margin-left: $block1;
     font-weight: bold;
-  }
-}
-
-.nav {
-  z-index: 2;
-  position: fixed;
-  margin: auto;
-  right: $block3;
-  height: 0;
-  font-family: "basier_circlesemi";
-  line-height: 2.8rem;
-  text-align: right;
-  hr {
-    border: none;
-    height: 0px;
-    color: rgb(120, 120, 120);
-    background-color: rgb(120, 120, 120);
-  }
-  a {
-    text-decoration: none;
-    color: $bodyColor;
-  }
-
-  a:hover {
-    text-decoration: line-through;
-    cursor: pointer;
   }
 }
 
@@ -240,7 +209,6 @@
 @media only screen and (max-device-width: 320px),
   only screen and (min-device-width: 560px) and (max-device-width: 1136px) and (-webkit-min-device-pixel-ratio: 2) {
   .title {
-
     margin-top: $block5;
     font-size: 4rem;
     hyphens: auto;
@@ -250,12 +218,6 @@
   .index_body {
     width: 90%;
     margin: auto;
-  }
-
-  .nav {
-    display: none;
-    position: relative;
-    bottom: 0;
   }
 }
 
@@ -269,12 +231,10 @@
   }
 
   .title {
- 
     margin-top: $block5;
     font-size: 5rem;
     hyphens: auto;
     line-height: 5rem;
-
   }
 
   .nav {
@@ -364,6 +324,13 @@
     grid-template-columns: auto auto;
     text-align: left;
     width: 100%;
+  }
+
+  .title {
+    margin-top: $block1;
+    font-size: 8rem;
+    hyphens: auto;
+    line-height: 8rem;
   }
 
   .thumb {
