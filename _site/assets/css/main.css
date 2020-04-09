@@ -4,7 +4,7 @@ h1 { font-family: "basier_circlesemi"; font-size: 1.8rem; font-weight: 100; }
 
 h2 { font-family: "basier_circleregular"; font-weight: 300; font-size: 1rem; }
 
-h3 { font-family: "basier_circleregular"; font-size: 0.8rem; text-transform: uppercase; opacity: 0.5; font-weight: 300; }
+h3 { font-family: "basier_circlesemi"; font-size: 0.8rem; text-transform: uppercase; opacity: 0.5; font-weight: initial; }
 
 h4 { font-family: "basier_circleregular"; font-size: 0.7rem; text-transform: uppercase; opacity: 0.2; font-weight: 300; line-height: 1rem; }
 
@@ -58,9 +58,9 @@ header a:hover { cursor: pointer; opacity: 0.5; }
 
 .title { font-family: "basier_circlesemi"; font-size: 8rem; text-align: left; line-height: 8rem; margin-left: -8px; padding-bottom: 128px; }
 
-.title h3 { line-height: 1.5rem; margin-left: 8px; font-weight: bold; }
+.title h3 { line-height: 1.5rem; margin-left: 8px; }
 
-.category { padding-bottom: 32px; font-family: "basier_circleregular"; font-size: 0.8rem; text-transform: uppercase; opacity: 0.5; font-weight: bold; }
+.category { padding-bottom: 32px; font-family: "basier_circlesemi"; font-size: 0.8rem; text-transform: uppercase; opacity: 0.5; }
 
 .index_column_child { padding-top: 64px; display: grid; grid-template-columns: auto; }
 
