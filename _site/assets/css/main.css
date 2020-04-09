@@ -8,12 +8,12 @@ h3 { font-family: "basier_circlesemi"; font-size: 0.8rem; text-transform: upperc
 
 h4 { font-family: "basier_circleregular"; font-size: 0.7rem; text-transform: uppercase; opacity: 0.2; font-weight: 300; line-height: 1rem; }
 
-html, html[data-theme="light"] { --background-color: #F4F6F8; --light-text-color: #151515; --link-color: rgb(0, 112, 201); --main-background-color: rgb(255, 255, 255); --main-text-color: rgb(51, 51, 51); }
+html, html[data-theme="light"] { --background-color: #f4f6f8; --light-text-color: #151515; --link-color: rgb(0, 112, 201); --main-background-color: rgb(255, 255, 255); --main-text-color: rgb(51, 51, 51); }
 
-html[data-theme="dark"] { --background-color: #151515; --light-text-color: #F4F6F8; --link-color: rgb(100, 210, 255); --main-background-color: rgb(28, 28, 30); --main-text-color: rgb(229, 229, 234); }
+html[data-theme="dark"] { --background-color: #151515; --light-text-color: #f4f6f8; --link-color: rgb(100, 210, 255); --main-background-color: rgb(28, 28, 30); --main-text-color: rgb(229, 229, 234); }
 
-@media (prefers-color-scheme: dark) { html, html[data-theme="dark"] { --background-color: #151515; --light-text-color: #F4F6F8; --link-color: rgb(100, 210, 255); --main-background-color: rgb(28, 28, 30); --main-text-color: rgb(229, 229, 234); }
-  html[data-theme="light"] { --background-color: #F4F6F8; --light-text-color: #151515; --link-color: rgb(0, 112, 201); --main-background-color: rgb(255, 255, 255); --main-text-color: rgb(51, 51, 51); } }
+@media (prefers-color-scheme: dark) { html, html[data-theme="dark"] { --background-color: #151515; --light-text-color: #f4f6f8; --link-color: rgb(100, 210, 255); --main-background-color: rgb(28, 28, 30); --main-text-color: rgb(229, 229, 234); }
+  html[data-theme="light"] { --background-color: #f4f6f8; --light-text-color: #151515; --link-color: rgb(0, 112, 201); --main-background-color: rgb(255, 255, 255); --main-text-color: rgb(51, 51, 51); } }
 
 body { background: var(--background-color); color: var(--light-text-color); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; margin: 0; padding: 0; }
 
@@ -58,7 +58,7 @@ header a:hover { cursor: pointer; opacity: 0.5; }
 
 .title { font-family: "basier_circlesemi"; font-size: 8rem; text-align: left; line-height: 8rem; margin-left: -8px; padding-bottom: 128px; }
 
-.title h3 { line-height: 1.5rem; margin-left: 8px; }
+.title h3 { letter-spacing: initial; line-height: 1.5rem; margin-left: 8px; }
 
 .category { padding-bottom: 32px; font-family: "basier_circlesemi"; font-size: 0.8rem; text-transform: uppercase; opacity: 0.5; }
 
@@ -218,7 +218,7 @@ footer { font-size: 0.9rem; position: relative; margin: auto; width: 100%; color
 
 .nav_title { font-size: 4rem; hyphens: auto; line-height: 4rem; }
 
-.nav_title h3 { line-height: 1.5rem; font-weight: bold; }
+.nav_title h3 { line-height: 1.5rem; }
 
 .nav_column_child { width: 95%; margin: auto; padding-top: 64px; display: grid; grid-template-columns: auto; }
 
