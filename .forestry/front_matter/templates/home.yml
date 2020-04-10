@@ -26,6 +26,12 @@ fields:
     min: 
     max: 
     step: 
+- name: popup
+  type: text
+  config:
+    required: false
+  label: Popup
+  description: Include a short message
 - type: text
   name: layout
   label: Layout
