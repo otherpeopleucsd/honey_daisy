@@ -141,6 +141,8 @@ header a:hover { cursor: pointer; opacity: 0.5; }
 
 @font-face { font-family: "ogg"; src: url("../assets/fonts/Ogg-Italic.woff2") format("woff2"), url("../assets/fonts/Ogg-Italic.woff") format("woff"), url("../assets/fonts/Ogg Roman.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
+@font-face { font-family: "basier_circlemono"; src: url("../../assets/fonts/basiercirclemono-regular-webfont.eot"); src: url("../../assets/fonts/basiercirclemono-regular-webfont.woff2") format("woff2"), url("../../assets/fonts/basiercirclemono-regular-webfont.woff") format("woff"), url("../../assets/fonts/basiercirclemono-regular-webfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
 .team_module { width: 80%; display: grid; grid-template-columns: auto auto auto; grid-gap: 1px; }
 
 .team_module h3 { font-weight: bold; }
@@ -235,5 +237,20 @@ span svg { fill: var(--light-text-color); }
   .nav_title h3 { margin-left: 32px; }
   .overlay a { margin-left: 32px; }
   .nav_column_child { width: 92%; margin: auto; padding-top: 64px; display: grid; grid-template-columns: auto auto; } }
+
+.delayedPopupWindow { width: 100%; position: fixed; left: 0; bottom: 0; background-color: #f15f0b; color: white; display: none; z-index: 3; padding: 16px 0 16px 0; font-size: 0.8rem; text-transform: uppercase; line-height: 1rem; opacity: .98; font-family: "basier_circlemono"; }
+
+.popup { display: grid; grid-template-columns: auto auto; }
+
+.formDescription { position: relative; margin: auto; overflow-wrap: break-word; width: 92%; }
+
+/*   This is the closing button  */
+#btnClose { border: 2px solid white; padding: 8px 16px 8px 16px; text-decoration: none; color: #ffffff; text-align: center; height: 15px; width: 64px; margin: auto 32px auto auto; transition: 0.3s ease; }
+
+/*   This is the closing button hover state  */
+#btnClose:hover { color: #ff5e00; background-color: white; }
+
+@media only screen and (max-width: 728px) and (min-width: 321px) { .popup { display: grid; grid-template-columns: auto; }
+  #btnClose { border: 2px solid white; padding: 8px 16px 8px 16px; text-decoration: none; color: #ffffff; text-align: center; height: 15px; width: 64px; margin-right: 16px; margin-top: 8px; } }
 
 /*# sourceMappingURL=main.css.map */
