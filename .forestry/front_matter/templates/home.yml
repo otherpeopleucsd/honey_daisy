@@ -26,6 +26,9 @@ fields:
     min: 
     max: 
     step: 
+- name: popup_toggle
+  type: boolean
+  label: Popup toggle
 - name: popup
   type: text
   config:
