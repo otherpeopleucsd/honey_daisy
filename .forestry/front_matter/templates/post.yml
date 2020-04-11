@@ -53,6 +53,7 @@ fields:
   default: Post
   hidden: true
 pages:
+- _posts/2020-04-01-girls-of-the-limberlost.md
 - _posts/2020-04-05-with-liqour.md
 - _posts/2020-04-06-at-the-sink.md
 - _posts/2020-04-06-boys-night.md
