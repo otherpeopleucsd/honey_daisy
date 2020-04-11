@@ -32,9 +32,12 @@ fields:
 - name: popup
   type: text
   config:
-    required: false
-  label: Popup
-  description: Include a short message
+    required: true
+    max: 500
+  label: Popup Message
+  showOnly:
+    field: popup_toggle
+    value: true
 - type: text
   name: layout
   label: Layout
