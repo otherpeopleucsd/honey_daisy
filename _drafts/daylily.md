@@ -101,7 +101,7 @@ But she wasn’t listening. She could feel it now, the hot tears on her face, th
 
 “MAYA!”
 
-Maya jolted awake, the piercing cry bursting through her dream and dragging her back to reality. She drew in a ragged breath and struggled to calm her nerves. When she opened her eyes again, she saw her wrinkled skin, her rickety old bed, and makeshift blanket knitted from graphic t-shirts. Her old weary bones felt the night breeze waltzing in through the crack in the curtain; she felt the weight of her spectacles on her nose, and she knew she was back. Back in her tiny log cabin at the top of the world, the only place left that hadn’t been scorched by the sun; the only place that hadn’t been made unlivable. They used to call this mountain Kanchenjunga, or “Five Treasures of the High Snow”. She rather liked that name, even though it was hard to say, the mountain’s treasures were long gone and snow was a fading memory.
+Maya jolted awake, the piercing cry bursting through her dream and dragging her back to reality. She drew in a ragged breath and struggled to calm her nerves. When she opened her eyes again, she saw her wrinkled skin, her rickety old bed, and makeshift blanket knitted from graphic t-shirts. Her old weary bones felt the night breeze waltzing in through the crack in the curtain; she felt the weight of her spectacles on her nose, and she knew she was back. Back in her tiny log cabin at the top of the world, the only place left that hadn’t been scorched by the sun; the only place that hadn’t been made unlivable. They used to call this mountain Kanchenjunga, or “Five Treasures of the High Snow.” She rather liked that name, even though it was hard to say, even though the mountain’s treasures were long gone and snow was a fading memory.
 
 “Maya, are you okay?!”
 
@@ -169,7 +169,7 @@ It was liberating.
 
 Maya’s eyes snapped back to Daylily. He looked back at her, eyes wide and questioning. She used to feel sorry for him. Such a little life, extinguished far too soon. But perhaps it was for the best.
 
-_This is a good way to go,_ she thought_. He will go with memories of mountain brooks and starry skies. He will go in an instant, no suffering, only light. Yes, this is a good way to go indeed._
+_This is a good way to go,_ she thought. _He will go with memories of mountain brooks and starry skies. He will go in an instant, no suffering, only light. Yes, this is a good way to go indeed._
 
 “Are you alright?” the boy asked. Maya could hear the alarm in his voice, but she couldn’t stop the mad grin that was starting to spread across her face.
 
