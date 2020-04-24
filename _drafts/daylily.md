@@ -7,7 +7,7 @@ date: 2020-04-24 07:00:00 +0000
 thumb: ''
 
 ---
-“Fear will be tasted, and goodbyes will be swallowed,
+<center>“Fear will be tasted, and goodbyes will be swallowed,
 
 Compassion will be forsaken, and hearts will be hollowed,
 
@@ -23,7 +23,7 @@ In the knowledge that there will be no suffering in the end,
 
 Because we will sleep the peaceful sleep;
 
-No hearts to break; no eyes to cry; no wills to bend.”
+No hearts to break; no eyes to cry; no wills to bend.”</center>
 
 Maya’s eyes flew open with a gasp as the familiar song played in her ears. She remembered this body; fifty years ago, it was hers. She was sitting on the edge of a large swimming pool, her legs dangling in its aggressively blue water. Around her smouldered the remains of revelry; some fifty-odd strangers in various stages of undress, fast asleep on any surface that would accommodate them. Some were sprawled out on deck chairs, feather boas twisted around their limp limbs and chocolate smeared on their faces. Others were propped up against the plastic palm trees, their arms crossed across their sunburned chests and their necks struggling to support their heads and the elaborate headdresses atop them. The rest were passed out on the pool floats drifting from one side of the pool to the other, their empty glasses and bottles nestling next to them. It was far too hot, and bright too, thanks to the halogen warmth and fake sunlight radiating from the domed ceiling above her.
 
