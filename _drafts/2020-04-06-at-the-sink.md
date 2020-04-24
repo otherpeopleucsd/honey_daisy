@@ -9,14 +9,14 @@ thumb: ''
 ---
 My mother stands there at the sink, washing the dishes<br>That we used just minutes before.<br>And her hands go washing, washing,<br>As she stares at her reflection in the window.
 
-She’s running towards a jungle,<br>While the sun licks at her mocha skin.<br>And they cry ‘Morena! Morena!’<br>As she laughs and tries to catch at birds the color of the rainbow.
+She’s running towards a jungle,<br>While the sun licks at her mocha skin.<br>And they cry _‘Morena! Morena!’_<br>As she laughs and tries to catch at birds the color of the rainbow.
 
-She’s moving away from a homeland,<br>A strange language on her lips.<br>And her dreams are larger than the moon and the earth,<br>More beautiful and grand than the stars.
+She’s moving from a homeland,<br>A strange language on her lips.<br>And her dreams are larger than the moon and the earth,<br>More infinitely grand than the stars.
 
-She’s walking down a street,<br>In a place where futures are made.<br>And her future is higher than the sky,<br>In the shadow of a golden bear.
+She’s walking down a street,<br>In the place where futures are made<br>And her passion runs hotter than the blood in her veins,<br>Yearning for a chance to be great.
 
 But
 
-My mother stands at the sink, washing dishes,<br>That we used just minutes before.<br>And her hands go washing, washing,<br>As she stares at her reflection in the window
+My mother stands now at the sink, washing the dishes,<br>That I used just minutes before.<br>And her hands go washing, washing,<br>As she stares at her reflection in the window
 
 And sees all those dreams fly away, just like jungle birds<br>The color of the rainbow.
