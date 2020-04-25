@@ -1,7 +1,7 @@
 ---
 category: Nonfiction
 layout: Post
-title: parasite - draft
+title: In Honor of Parasite
 contributor: Hemmy Chun
 date: 2020-04-24 07:00:00 +0000
 thumb: ''
