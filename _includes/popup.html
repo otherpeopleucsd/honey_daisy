@@ -1,22 +1,20 @@
-<div id="bkgOverlay" class="backgroundOverlay"></div>
 
+
+
+{% if page.popup_toggle  %}
 <div id="delayedPopup" class="delayedPopupWindow">
   <div class="popup">
-
     <!-- This is the left side of the popup for the description -->
     <div class="formDescription">
-
       <p>{{ page.popup }}</p>
     </div>
-
     <!-- This is the close button -->
     <a href="#" id="btnClose" title="Click here to close this deal box.">GOT IT</a>
-
   </div>
 </div>
+{% endif %}
 
 <script>
-
   $(document).ready(function () {
     //Fade in delay for the background overlay (control timing here)
     $("#bkgOverlay")
@@ -43,11 +41,4 @@
     $("#bkgOverlay").fadeOut(400);
     $("#delayedPopup").fadeOut(300);
   }
-
-
-
-
-
-
-
 </script>
