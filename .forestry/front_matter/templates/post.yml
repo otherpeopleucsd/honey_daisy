@@ -39,10 +39,21 @@ fields:
     time_format: 
     display_utc: false
     export_format: ''
-- name: collection
-  type: boolean
-  label: Collection
-  description: Toggle if piece in the magazine
+- name: anthology
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - Collection
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Anthology
+  description: "<strong>Collection</strong> for magazine content<br><strong>Content</strong>
+    for online content"
 - name: quarter
   type: text
   config:
@@ -50,8 +61,8 @@ fields:
   description: Season YEAR (eg. Spring 2020)
   label: Quarter
   showOnly:
-    field: collection
-    value: true
+    field: anthology
+    value: Collection
 - name: collection_no_
   type: number
   label: Collection No.
@@ -63,8 +74,8 @@ fields:
     max: 
     step: 
   showOnly:
-    field: collection
-    value: true
+    field: anthology
+    value: Collection
 - name: thumb
   type: file
   config:
