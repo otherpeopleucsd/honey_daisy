@@ -1,108 +1,85 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="utf-8">
-  <title>{{ page.title }} - {{ site.title }}</title>
-  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
-  <script src="https://kit.fontawesome.com/b7dcab30d5.js" crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-</head>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    <script src="https://kit.fontawesome.com/b7dcab30d5.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
 
-<body>
+  <body>
 
-  {{ content}}
+    {{ content}}
 
+    {% include header.html %}
 
-  {% include header.html %}
+    <div class="index_body">
 
-  <div class="index_body">
+      <div class="title">NON&shy;FICTION</div>
 
-    <div class="index_column">
+      <div class="index_column">
 
-      <div class="title">NON&shy;FICTION<h3>Much love from University of California, San Diego</h3>
+        <h3>Much love from University of California, San Diego</h3>
+
       </div>
 
-
-    </div>
-
-    <!-- <div class="featured_image">
+      <!-- <div class="featured_image">
       {% if page.featured %}
       <img src="{{site.baseurl}}{{ page.featured }}">
       {% endif %}
     </div> -->
 
+      <div class="index_column_child">
+        <div class="category">Recent Nonfiction</div>
 
+        <div class="recent_works_parent">
+          {% for post in site.categories['Nonfiction'] limit : 3 %}
 
-
-    <div class="index_column_child">
-    <div class="category">Recent Nonfiction</div>
-
-
-
-
-
-    <div class="recent_works_parent">
-      {% for post in site.categories['Nonfiction'] limit:3 %}
-
-      <div class="recent_works">
-        <a href="{{site.baseurl}}{{ post.url }}">
-          <h1>{{ post.title }}</h1>
-          <h3> by {{ post.contributor }}</h3>
-        </a>
-        <h3>
-          <b>{{ post.category }}</b> —
+            <div class="recent_works">
+              <a href="{{site.baseurl}}{{ post.url }}">
+                <h1>{{ post.title }}</h1>
+                <h3> by {{ post.contributor }}</h3>
+              </a>
+              <h3>
+                <b>{{ post.category }}</b> —
           <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
-        </h3>
-      </div>
-     
-      {% endfor %}
-    </div>
+              </h3>
+            </div>
 
-
-    </div>
-
-
-
-
-
-   <div class="index_column_child">
-      <div class="category">More Nonfiction</div>
-  
-      <div class="recent_works_parent">
-        {% for post in site.categories['Nonfiction']   offset:3 %}
-          <div class="recent_works">
-            <a href="{{site.baseurl}}{{ post.url }}">
-              <h1>{{ post.title }}</h1>
-              <h3> by {{ post.contributor }}</h3>
-            </a>
-            <h3>
-              <b>{{ post.category }}</b> —
-              <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
-            </h3>
-          </div>
           {% endfor %}
+        </div>
+
       </div>
-  
-      
+
+      <div class="index_column_child">
+        <div class="category">More Nonfiction</div>
+
+        <div class="recent_works_parent">
+          {% for post in site.categories['Nonfiction'] offset : 3 %}
+            <div class="recent_works">
+              <a href="{{site.baseurl}}{{ post.url }}">
+                <h1>{{ post.title }}</h1>
+                <h3> by {{ post.contributor }}</h3>
+              </a>
+              <h3>
+                <b>{{ post.category }}</b> —
+              <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
+              </h3>
+            </div>
+          {% endfor %}
+        </div>
+
       </div>
 
+    </div>
 
+    {% include footer.html %}
 
+    {% include disable_copy.html %}
 
-
-  </div>
-
-
-  {% include footer.html %}
-
-  {% include disable_copy.html %}
-
-
- 
-
-
-</body>
+  </body>
 
 </html>

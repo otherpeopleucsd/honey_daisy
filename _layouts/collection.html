@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    <script src="https://kit.fontawesome.com/b7dcab30d5.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+
+    {{ content}}
+
+    {% include header.html %}
+
+    <div class="index_body">
+
+
+
+
+      <div class="title">COLLECTION </div>
+
+      <div class="index_column">
+
+        <h3>Much love from University of California, San Diego</h3>
+
+      </div>
+
+      <!-- <div class="featured_image">
+      {% if page.featured %}
+      <img src="{{site.baseurl}}{{ page.featured }}">
+      {% endif %}
+    </div> -->
+
+      <div class="index_column_child">
+        <div class="category">Recent</div>
+<h1> Coming soon </h1><br>
+<a href="{{ site.url }}{{ site.baseurl }}"> <button class="button">Return home</button></a>
+
+    
+ 
+
+
+
+      </div>
+
+
+
+    </div>
+
+    {% include footer.html %}
+
+    {% include disable_copy.html %}
+
+  </body>
+
+</html>

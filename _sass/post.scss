@@ -21,6 +21,15 @@
   }
 }
 
+.post_body2 {
+  margin: auto;
+  width: 95%;
+  position: relative;
+  padding: $block2 0 $block4 0;
+}
+
+
+
 .back {
   position: relative;
   font-size: 3rem;
@@ -67,7 +76,6 @@
 
   position: relative;
   padding: $block2 0 $block4 0;
-
   img {
     width: 100%;
   }
@@ -127,6 +135,7 @@
 
 
 @media only screen and (max-width: 1024px) and (min-width: 729px) {
+
 
   .post_body {
     font-family: Arial, Helvetica, sans-serif;

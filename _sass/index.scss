@@ -23,6 +23,7 @@
   animation: fadeInAnimation ease 2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+
 }
 
 .index_body {
@@ -30,6 +31,12 @@
   width: 95%;
   position: relative;
   padding: $block2 0 $block4 0;
+
+
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -142px; /* the bottom margin is the negative value of the footer's height */
 }
 
 .title {
@@ -38,7 +45,7 @@
   text-align: left;
   line-height: 8rem;
   margin-left: -$block1;
-  padding-bottom: $block5;
+
 
   h3 {
     letter-spacing: initial;
@@ -65,10 +72,41 @@
 
 .index_column {
   display: grid;
-  grid-template-columns: auto auto;
-
+  grid-template-columns: auto;
   border-style: solid;
   border-width: 0 0 0px 0;
+width: 60%;
+margin-top: $block2;
+margin-bottom: $block5;
+
+}
+
+.button {
+
+
+  font-family: "basier_circlemono";
+  font-size: .9rem;
+  background-color: $backgroundColor;
+  border: 2px solid $bodyColor;
+  text-decoration: none;
+  color: $bodyColor;
+  text-align: center;
+  transition: 0.3s ease;
+  padding: $block1 $block2 $block1 $block2;
+  cursor: pointer;
+a{
+  text-decoration: none;
+  color: $bodyColor;
+}
+
+}
+.button:hover {
+  color: $backgroundColor;
+  background-color: $bodyColor;
+  a{
+    text-decoration: none;
+    color: $backgroundColor;
+  }
 }
 
 .recent_works_parent {
@@ -87,10 +125,10 @@
 
   text-align: left;
   width: 100%;
-    /* auto minimum width, causing problem */
-    grid-template-columns: 1fr 1fr;
-    /* fix: minimum width of 0 */
-    grid-template-columns: minmax(0, 1fr 1fr);
+  /* auto minimum width, causing problem */
+  grid-template-columns: 1fr 1fr;
+  /* fix: minimum width of 0 */
+  grid-template-columns: minmax(0, 1fr 1fr);
 }
 
 .thumb {
@@ -105,8 +143,6 @@
   img:hover {
     opacity: 0.5;
     transition: 0.3s;
-
-  
   }
 }
 
@@ -267,6 +303,8 @@
 
     width: 95%;
     margin: auto;
+    margin-left: $block1;
+    margin-bottom: $block5;
   }
 
   .title {
@@ -274,6 +312,7 @@
     font-size: 5rem;
     hyphens: auto;
     line-height: 5rem;
+    margin-left: -.3px;
   }
 
   .nav {
@@ -364,12 +403,11 @@
     border-width: 0px 0px 0px 0px;
     font-size: 2rem;
     margin-bottom: $block3;
-  
+
     text-overflow: ellipsis;
   }
 
-
-  .recent_works_art_parent{
+  .recent_works_art_parent {
     grid-template-columns: 1fr;
     width: 100vw;
     position: relative;
@@ -395,7 +433,6 @@
   .thumb {
     img {
       height: 424px;
-
     }
   }
 
@@ -407,7 +444,6 @@
 }
 
 @media screen and (min-width: 2400px) {
-
   .title {
     margin-top: $block5;
   }
