@@ -29,6 +29,10 @@ fields:
       file: 
       path: 
   label: Category
+- name: collection
+  type: boolean
+  label: Collection
+  description: Toggle if piece in the magazine
 - name: date
   type: datetime
   label: Date
