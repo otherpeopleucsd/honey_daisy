@@ -66,9 +66,9 @@ header a:hover { cursor: pointer; opacity: 0.5; }
 
 .index_column { display: grid; grid-template-columns: auto auto; border-style: solid; border-width: 0 0 0px 0; }
 
-.recent_works_parent { display: grid; grid-template-columns: auto auto auto; text-align: left; width: 100%; /* auto minimum width, causing problem */ grid-template-columns: 1fr 1fr 1fr; /* fix: minimum width of 0 */ grid-template-columns: minmax(0, 1fr 1fr 1fr); }
+.recent_works_parent { display: grid; text-align: left; width: 100%; /* auto minimum width, causing problem */ grid-template-columns: 1fr 1fr 1fr; /* fix: minimum width of 0 */ grid-template-columns: minmax(0, 1fr 1fr 1fr); }
 
-.recent_works_art_parent { display: grid; grid-template-columns: auto auto; text-align: left; width: 100%; }
+.recent_works_art_parent { display: grid; text-align: left; width: 100%; /* auto minimum width, causing problem */ grid-template-columns: 1fr 1fr; /* fix: minimum width of 0 */ grid-template-columns: minmax(0, 1fr 1fr); }
 
 .thumb { overflow: hidden; margin-bottom: 32px; }
 
@@ -138,9 +138,10 @@ header a:hover { cursor: pointer; opacity: 0.5; }
 
 @media only screen and (max-width: 1024px) and (min-width: 729px) { .index_body { width: 98%; }
   .nav { display: none; }
+  .recent_works_art_parent { grid-template-columns: 1fr; }
   .recent_works_parent { display: grid; grid-template-columns: auto auto; text-align: left; width: 100%; }
   .title { margin-top: 8px; font-size: 8rem; hyphens: auto; line-height: 8rem; }
-  .thumb img { height: 224px; }
+  .thumb img { height: 424px; }
   .thumb2 img { height: 160px; } }
 
 @media screen and (min-width: 2400px) { body { width: 70%; margin: auto; margin-top: 256px; } }

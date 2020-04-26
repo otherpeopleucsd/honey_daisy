@@ -73,7 +73,7 @@
 
 .recent_works_parent {
   display: grid;
-  grid-template-columns: auto auto auto;
+
   text-align: left;
   width: 100%;
   /* auto minimum width, causing problem */
@@ -84,9 +84,13 @@
 
 .recent_works_art_parent {
   display: grid;
-  grid-template-columns: auto auto;
+
   text-align: left;
   width: 100%;
+    /* auto minimum width, causing problem */
+    grid-template-columns: 1fr 1fr;
+    /* fix: minimum width of 0 */
+    grid-template-columns: minmax(0, 1fr 1fr);
 }
 
 .thumb {
@@ -102,8 +106,6 @@
     opacity: 0.5;
   }
 }
-
-
 
 .thumb2 {
   overflow: hidden;
@@ -163,7 +165,6 @@
     font-family: ogg;
   }
   h1:hover {
-
     font-family: ogg;
   }
   h1,
@@ -354,6 +355,10 @@
     display: none;
   }
 
+
+  .recent_works_art_parent{
+    grid-template-columns: 1fr;
+  }
   .recent_works_parent {
     display: grid;
     grid-template-columns: auto auto;
@@ -370,7 +375,7 @@
 
   .thumb {
     img {
-      height: 224px;
+      height: 424px;
     }
   }
 
