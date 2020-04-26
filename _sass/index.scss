@@ -352,16 +352,31 @@
 
 @media only screen and (max-width: 1024px) and (min-width: 729px) {
   .index_body {
-    width: 98%;
+    width: 95%;
   }
 
   .nav {
     display: none;
   }
 
+  .recent_works_art {
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+    font-size: 2rem;
+    margin-bottom: $block3;
+  
+    text-overflow: ellipsis;
+  }
+
 
   .recent_works_art_parent{
     grid-template-columns: 1fr;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
   }
   .recent_works_parent {
     display: grid;
@@ -380,6 +395,7 @@
   .thumb {
     img {
       height: 424px;
+
     }
   }
 
@@ -391,10 +407,13 @@
 }
 
 @media screen and (min-width: 2400px) {
+
+  .title {
+    margin-top: $block5;
+  }
   body {
     width: 70%;
     margin: auto;
-    margin-top: $block5;
   }
 }
 

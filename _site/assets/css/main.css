@@ -136,15 +136,17 @@ header a:hover { cursor: pointer; opacity: 0.5; }
   .recent_works a:hover, .recent_works_art a:hover { text-decoration: none; }
   .recent_works:hover { border-width: 0px 0px 1px 0px; } }
 
-@media only screen and (max-width: 1024px) and (min-width: 729px) { .index_body { width: 98%; }
+@media only screen and (max-width: 1024px) and (min-width: 729px) { .index_body { width: 95%; }
   .nav { display: none; }
-  .recent_works_art_parent { grid-template-columns: 1fr; }
+  .recent_works_art { border-style: solid; border-width: 0px 0px 0px 0px; font-size: 2rem; margin-bottom: 32px; text-overflow: ellipsis; }
+  .recent_works_art_parent { grid-template-columns: 1fr; width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; }
   .recent_works_parent { display: grid; grid-template-columns: auto auto; text-align: left; width: 100%; }
   .title { margin-top: 8px; font-size: 8rem; hyphens: auto; line-height: 8rem; }
   .thumb img { height: 424px; }
   .thumb2 img { height: 160px; } }
 
-@media screen and (min-width: 2400px) { body { width: 70%; margin: auto; margin-top: 128px; } }
+@media screen and (min-width: 2400px) { .title { margin-top: 128px; }
+  body { width: 70%; margin: auto; } }
 
 @keyframes fadeInAnimation { 0% { opacity: 0; }
   100% { opacity: 1; } }
@@ -153,7 +155,7 @@ header a:hover { cursor: pointer; opacity: 0.5; }
 
 @font-face { font-family: "basier_circlesemi"; src: url("../../assets/fonts/basiercircle-semibold-webfont.eot"); src: url("../../assets/fonts/basiercircle-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/basiercircle-semibold-webfont.woff2") format("woff2"), url("../assets/fonts/basiercircle-regular-webfont.woff") format("woff"), url("../../assets/fonts/basiercircle-semibold-webfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
-@font-face { font-family: "ogg"; src: url("../assets/fonts/Ogg-Italic.woff2") format("woff2"), url("../assets/fonts/Ogg-Italic.woff") format("woff"), url("../assets/fonts/Ogg Roman.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "ogg"; src: url("../../assets/fonts/Ogg-Italic.woff2") format("woff2"), url("../../assets/fonts/Ogg-Italic.woff") format("woff"), url("../../assets/fonts/Ogg Roman.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
 @font-face { font-family: "basier_circlemono"; src: url("../../assets/fonts/basiercirclemono-regular-webfont.eot"); src: url("../../assets/fonts/basiercirclemono-regular-webfont.woff2") format("woff2"), url("../../assets/fonts/basiercirclemono-regular-webfont.woff") format("woff"), url("../../assets/fonts/basiercirclemono-regular-webfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
@@ -191,6 +193,9 @@ footer { font-size: 0.9rem; position: relative; margin: auto; width: 100%; color
 
 @media only screen and (max-width: 728px) { .footer_container { grid-template-columns: auto; }
   .footer_intro, .footer_module { text-align: left; padding: 16px; } }
+
+@media screen and (min-width: 2400px) { footer { width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; }
+  .footer_container { width: 65%; } }
 
 .post_title, .post_content { animation: fadeInAnimation ease 2s; animation-iteration-count: 1; animation-fill-mode: forwards; padding-left: 64px; }
 

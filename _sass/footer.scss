@@ -12,6 +12,7 @@ footer {
   background-color: $bodyColor;
   padding: 42px 0 42px 0;
   z-index: 3;
+  
 }
 
 .footer_container {
@@ -68,5 +69,26 @@ footer {
   .footer_intro, .footer_module {
     text-align: left;
     padding: $block2;
+  }
+}
+
+
+
+
+@media screen and (min-width: 2400px) {
+
+  footer {
+
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    
+  }
+
+  .footer_container {
+    width: 65%;
   }
 }
