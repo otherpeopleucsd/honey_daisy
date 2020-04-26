@@ -6,9 +6,9 @@ category: Fiction
 layout: Post
 thumb: ''
 collection: false
-quarter: Spring 2020
-collection_no_: 1
-anthology: Collection
+quarter: ''
+collection_no_: 
+anthology: []
 
 ---
 To Cornell University and Liberty College,<br>(you know who you are)
