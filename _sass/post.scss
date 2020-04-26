@@ -123,3 +123,26 @@
     margin-top: $block1;
   }
 }
+
+
+
+@media only screen and (max-width: 1024px) and (min-width: 729px) {
+
+  .post_body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    width: 100%;
+  
+    position: relative;
+    padding: $block2 0 $block4 0;
+    overflow: hidden;
+    img {
+      width: 110vw;
+      position: relative;
+      left: 50%;
+      right: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
+    }
+  }
+}
