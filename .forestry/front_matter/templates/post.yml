@@ -40,21 +40,9 @@ fields:
     display_utc: false
     export_format: ''
 - name: anthology
-  type: select
+  type: tag_list
   default: []
-  config:
-    required: false
-    options:
-    - Collection
-    - Content
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
   label: Anthology
-  description: "<strong>Collection</strong> for magazine content<br><strong>Content</strong>
-    for online content"
 - name: quarter
   type: text
   config:
