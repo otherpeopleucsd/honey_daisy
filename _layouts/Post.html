@@ -62,49 +62,112 @@
   <div class="index_body">
 
 
+    {% if page.category == "Visual Arts" %}
+    <div class="category">More Visual Arts</div>
+    {% elsif page.category == "Poetry" %}
+    <div class="category">More Poetry</div>
+    {% elsif page.category == "Fiction" %}
+    <div class="category">More Fiction</div>
+    {% elsif page.category == "Nonfiction" %}
+    <div class="category">More Nonfiction</div>
+    {% endif %}
+
+    <div class="recent_works_parent">
+
+      {% if page.category == "Visual Arts" %}
+      {% for post in site.categories['Visual Arts']   limit:3 %}
+      <div class="recent_works">
+        <a href="{{site.baseurl}}{{ post.url }}">
+          <h1>{{ post.title }}</h1>
+          <h3> by {{ post.contributor }}</h3>
+        </a>
+        <h3>
+          <b>{{ post.category }}</b> —
+          <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
+        </h3>
+      </div>
+      {% endfor %}
+      {% endif %}
+
+      {% if page.category == "Poetry" %}
+      {% for post in site.categories['Poetry']   limit:6 %}
+      <div class="recent_works">
+        <a href="{{site.baseurl}}{{ post.url }}">
+          <h1>{{ post.title }}</h1>
+          <h3> by {{ post.contributor }}</h3>
+        </a>
+        <h3>
+          <b>{{ post.category }}</b> —
+          <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
+        </h3>
+      </div>
+      {% endfor %}
+      {% endif %}
+
+      {% if page.category == "Fiction" %}
+      {% for post in site.categories['Fiction']   limit:6 %}
+      <div class="recent_works">
+        <a href="{{site.baseurl}}{{ post.url }}">
+          <h1>{{ post.title }}</h1>
+          <h3> by {{ post.contributor }}</h3>
+        </a>
+        <h3>
+          <b>{{ post.category }}</b> —
+          <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
+        </h3>
+      </div>
+      {% endfor %}
+      {% endif %}
+
+      {% if page.category == "Nonfiction" %}
+      {% for post in site.categories['Nonfiction']   limit:6 %}
+      <div class="recent_works">
+        <a href="{{site.baseurl}}{{ post.url }}">
+          <h1>{{ post.title }}</h1>
+          <h3> by {{ post.contributor }}</h3>
+        </a>
+        <h3>
+          <b>{{ post.category }}</b> —
+          <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
+        </h3>
+      </div>
+      {% endfor %}
+      {% endif %}
+    </div>
+
 
 
     <div class="category">Explore</div>
 
     <div class="recent_works_parent">
-      {% for post in site.categories['Poetry']   limit:2 %}
+      {% if page.previous.url %}
       <div class="recent_works">
-        <a href="{{site.baseurl}}{{ post.url }}">
-          <h1>{{ post.title }}</h1>
-          <h3> by {{ post.contributor }}</h3>
-        </a>
-        <h3>
-          <b>{{ post.category }}</b> —
-          <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
-        </h3>
-      </div>
-      {% endfor %}
 
-      {% for post in site.categories['Fiction']   limit:2 %}
-      <div class="recent_works">
-        <a href="{{site.baseurl}}{{ post.url }}">
-          <h1>{{ post.title }}</h1>
-          <h3> by {{ post.contributor }}</h3>
+        <a href="{{page.previous.url}}">
+          <h1>{{page.previous.title}}</h1>
+          <h3> by {{ page.previous.contributor }}</h3>
         </a>
         <h3>
-          <b>{{ post.category }}</b> —
-          <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
+          <b>{{ page.previous.category }}</b> —
+          <time
+            datetime="{{ page.previous.date | date: "%Y-%m-%d" }}">{{ page.previous.date | date_to_long_string }}</time>
         </h3>
-      </div>
-      {% endfor %}
 
-      {% for post in site.categories['Nonfiction']   limit:2 %}
+      </div>
+      {% endif %}
+
+      {% if page.next.url %}
       <div class="recent_works">
-        <a href="{{site.baseurl}}{{ post.url }}">
-          <h1>{{ post.title }}</h1>
-          <h3> by {{ post.contributor }}</h3>
+        <a href="{{page.next.url}}">
+          <h1>{{page.next.title}}</h1>
+          <h3> by {{ page.next.contributor }}</h3>
         </a>
         <h3>
-          <b>{{ post.category }}</b> —
-          <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
+          <b>{{ page.next.category }}</b> —
+          <time datetime="{{ page.next.date | date: "%Y-%m-%d" }}">{{ page.next.date | date_to_long_string }}</time>
         </h3>
       </div>
-      {% endfor %}
+      {% endif %}
     </div>
 
 

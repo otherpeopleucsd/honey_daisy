@@ -28,7 +28,6 @@ header {
     }
 }
 
-
 .nav {
     z-index: 2;
     position: fixed;
@@ -39,22 +38,21 @@ header {
     line-height: 2.8rem;
     text-align: right;
     hr {
-      border: none;
-      height: 0px;
-      color: rgb(120, 120, 120);
-      background-color: rgb(120, 120, 120);
+        border: none;
+        height: 0px;
+        color: rgb(120, 120, 120);
+        background-color: rgb(120, 120, 120);
     }
     a {
-      text-decoration: none;
-      color: $bodyColor;
+        text-decoration: none;
+        color: $bodyColor;
     }
-  
+
     a:hover {
-  
-      cursor: pointer;
-      font-family: ogg;
+        cursor: pointer;
+        font-family: ogg;
     }
-  }
+}
 
 .side_text_left {
     font-size: $fontSize;
@@ -96,18 +94,15 @@ header {
 @media only screen and (max-device-width: 320px),
     only screen and (min-device-width: 560px) and (max-device-width: 1136px) and (-webkit-min-device-pixel-ratio: 2) {
     .darkmode {
- 
         bottom: $block2;
         right: $block2;
-
-
     }
 
     .nav {
         display: none;
         position: relative;
         bottom: 0;
-      }
+    }
 }
 
 @media only screen and (max-width: 728px) {
@@ -116,3 +111,5 @@ header {
         display: none;
     }
 }
+
+
