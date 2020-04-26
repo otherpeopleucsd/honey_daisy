@@ -46,6 +46,7 @@ fields:
     required: false
     options:
     - Collection
+    - Content
     source:
       type: simple
       section: 
