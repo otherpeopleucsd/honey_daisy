@@ -39,32 +39,6 @@ fields:
     time_format: 
     display_utc: false
     export_format: ''
-- name: anthology
-  type: tag_list
-  default: []
-  label: Anthology
-- name: quarter
-  type: text
-  config:
-    required: false
-  description: Season YEAR (eg. Spring 2020)
-  label: Quarter
-  showOnly:
-    field: anthology
-    value: Collection
-- name: collection_no_
-  type: number
-  label: Collection No.
-  description: Numerical values only
-  default: 0
-  required: true
-  config:
-    min: 
-    max: 
-    step: 
-  showOnly:
-    field: anthology
-    value: Collection
 - name: thumb
   type: file
   config:
