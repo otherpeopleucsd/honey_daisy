@@ -134,7 +134,8 @@ header a:hover { cursor: pointer; opacity: 0.5; }
   .recent_works a:hover, .recent_works_art a:hover { text-decoration: none; }
   .recent_works:hover { border-width: 0px 0px 1px 0px; } }
 
-@media only screen and (max-width: 1024px) and (min-width: 729px) { .nav { display: none; }
+@media only screen and (max-width: 1024px) and (min-width: 729px) { .index_body { width: 98%; }
+  .nav { display: none; }
   .recent_works_parent { display: grid; grid-template-columns: auto auto; text-align: left; width: 100%; }
   .title { margin-top: 8px; font-size: 8rem; hyphens: auto; line-height: 8rem; }
   .thumb img { height: 224px; }
