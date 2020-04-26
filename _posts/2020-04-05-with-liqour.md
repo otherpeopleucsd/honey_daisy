@@ -5,9 +5,9 @@ date: 2020-04-05T07:00:00.000+00:00
 category: Fiction
 layout: Post
 thumb: ''
-collection: true
-quarter: Spring 2020
-collection_no_: 1
+collection: false
+quarter: ''
+collection_no_: 
 
 ---
 To Cornell University and Liberty College,<br>(you know who you are)
