@@ -66,7 +66,7 @@ header a:hover { cursor: pointer; opacity: 0.5; }
 
 .index_column { display: grid; grid-template-columns: auto auto; border-style: solid; border-width: 0 0 0px 0; }
 
-.recent_works_parent { display: grid; grid-template-columns: auto auto auto; text-align: left; width: 100%; }
+.recent_works_parent { display: grid; grid-template-columns: auto auto auto; text-align: left; width: 100%; /* auto minimum width, causing problem */ grid-template-columns: 1fr 1fr 1fr; /* fix: minimum width of 0 */ grid-template-columns: minmax(0, 1fr 1fr 1fr); }
 
 .recent_works_art_parent { display: grid; grid-template-columns: auto auto; text-align: left; width: 100%; }
 
@@ -82,7 +82,7 @@ header a:hover { cursor: pointer; opacity: 0.5; }
 
 .thumb2 img:hover { opacity: 0.5; }
 
-.recent_works { border-style: solid; border-width: 0px 0px 0px 1px; line-height: 0.8rem; font-size: 2rem; margin-bottom: 32px; }
+.recent_works { border-style: solid; border-width: 0px 0px 0px 1px; font-size: 2rem; margin-bottom: 32px; padding-right: 32px; text-overflow: ellipsis; }
 
 .recent_works h1 { line-height: 2rem; margin-bottom: -4px; margin-top: -0.2px; }
 
@@ -188,7 +188,7 @@ footer { font-size: 0.9rem; position: relative; margin: auto; width: 100%; color
 
 .back a { text-decoration: none; color: var(--light-text-color); }
 
-.post_title { padding-top: 64px; width: 70%; font-family: "basier_circlesemi"; font-size: 8rem; text-align: left; line-height: 8rem; margin-left: -8px; padding-bottom: 32px; }
+.post_title { padding-top: 64px; width: 70%; font-family: "basier_circlesemi"; font-size: 6rem; text-align: left; line-height: 6rem; margin-left: -8px; padding-bottom: 32px; }
 
 .post_title h1 { margin-left: 8px; line-height: 2rem; padding-top: 16px; }
 
