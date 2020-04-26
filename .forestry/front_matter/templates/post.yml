@@ -29,10 +29,6 @@ fields:
       file: 
       path: 
   label: Category
-- name: collection
-  type: boolean
-  label: Collection
-  description: Toggle if piece in the magazine
 - name: date
   type: datetime
   label: Date
@@ -43,6 +39,10 @@ fields:
     time_format: 
     display_utc: false
     export_format: ''
+- name: collection
+  type: boolean
+  label: Collection
+  description: Toggle if piece in the magazine
 - name: thumb
   type: file
   config:
