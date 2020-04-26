@@ -33,7 +33,7 @@ header a:hover { cursor: pointer; opacity: 0.5; }
 
 .nav a { text-decoration: none; color: var(--light-text-color); }
 
-.nav a:hover { text-decoration: line-through; cursor: pointer; }
+.nav a:hover { cursor: pointer; font-family: ogg; }
 
 .side_text_left { font-size: 0.85rem; margin: 0; position: fixed; top: 50%; -ms-transform: translateY(-50%); transform: translateY(-50%); transform: rotate(-90deg); left: 0; text-align: center; z-index: 2; }
 
@@ -86,21 +86,23 @@ header a:hover { cursor: pointer; opacity: 0.5; }
 
 .recent_works h1 { line-height: 2rem; margin-bottom: -4px; margin-top: -0.2px; }
 
+.recent_works h1:hover { font-family: ogg; }
+
 .recent_works h1, .recent_works h2, .recent_works h3 { padding: 0 0 0 32px; }
 
 .recent_works a { text-decoration: none; color: var(--light-text-color); }
-
-.recent_works a:hover { text-decoration: line-through; }
 
 .recent_works_art { border-style: solid; border-width: 0px 0px 0px 1px; font-size: 2rem; margin-bottom: 32px; text-overflow: ellipsis; }
 
 .recent_works_art h1 { line-height: 2rem; margin-bottom: -4px; margin-top: -0.2px; }
 
+.recent_works_art .thumb:hover ~ h1 { font-family: ogg; }
+
+.recent_works_art h1:hover { font-family: ogg; }
+
 .recent_works_art h1, .recent_works_art h2, .recent_works_art h3 { padding: 0 0 0 32px; }
 
 .recent_works_art a { text-decoration: none; color: var(--light-text-color); }
-
-.recent_works_art a:hover { text-decoration: line-through; }
 
 .recent_works:hover { border-width: 0px 0px 0px 1px; }
 

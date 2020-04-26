@@ -53,8 +53,9 @@
               <img src="{{site.baseurl}}{{ post.thumb }}">
             </div>
             <h1>{{ post.title }}</h1>
-            <h3> by {{ post.contributor }}</h3>
           </a>
+            <h3> by {{ post.contributor }}</h3>
+
           <h3>
             <b>{{ post.category }}</b> —
             <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
