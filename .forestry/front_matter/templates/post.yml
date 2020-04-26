@@ -43,6 +43,28 @@ fields:
   type: boolean
   label: Collection
   description: Toggle if piece in the magazine
+- name: quarter
+  type: text
+  config:
+    required: false
+  description: Season YEAR (eg. Spring 2020)
+  label: Quarter
+  showOnly:
+    field: collection
+    value: true
+- name: collection_no_
+  type: number
+  label: Collection No.
+  description: Numerical values only
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+  showOnly:
+    field: collection
+    value: true
 - name: thumb
   type: file
   config:
