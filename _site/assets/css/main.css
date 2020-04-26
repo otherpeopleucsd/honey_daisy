@@ -72,7 +72,7 @@ header a:hover { cursor: pointer; opacity: 0.5; }
 
 .thumb { overflow: hidden; margin-bottom: 32px; }
 
-.thumb img { height: 320px; width: 100%; margin-bottom: 16px; object-fit: cover; }
+.thumb img { height: 320px; width: 100%; object-fit: cover; }
 
 .thumb img:hover { opacity: 0.5; }
 
@@ -91,6 +91,16 @@ header a:hover { cursor: pointer; opacity: 0.5; }
 .recent_works a { text-decoration: none; color: var(--light-text-color); }
 
 .recent_works a:hover { text-decoration: line-through; }
+
+.recent_works_art { border-style: solid; border-width: 0px 0px 0px 1px; font-size: 2rem; margin-bottom: 32px; text-overflow: ellipsis; }
+
+.recent_works_art h1 { line-height: 2rem; margin-bottom: -4px; margin-top: -0.2px; }
+
+.recent_works_art h1, .recent_works_art h2, .recent_works_art h3 { padding: 0 0 0 32px; }
+
+.recent_works_art a { text-decoration: none; color: var(--light-text-color); }
+
+.recent_works_art a:hover { text-decoration: line-through; }
 
 .recent_works:hover { border-width: 0px 0px 0px 1px; }
 
@@ -116,12 +126,12 @@ header a:hover { cursor: pointer; opacity: 0.5; }
   .thumb { overflow: hidden; margin-bottom: 0; }
   .thumb img { height: 400px; width: 100%; margin-bottom: 32px; object-fit: cover; }
   .thumb img:hover { opacity: 0.5; }
-  .recent_works { border-style: solid; padding-top: 0; padding-bottom: 8px; border-width: 0 0 1px 0; line-height: 0.8rem; font-size: 2rem; margin-bottom: 32px; }
-  .recent_works h1 { line-height: 2.5rem; margin-top: -16px; }
-  .recent_works h2, .recent_works h3 { line-height: 0.8rem; }
-  .recent_works h1, .recent_works h2, .recent_works h3 { padding: 0 0 0 0; padding-left: 8px; }
-  .recent_works a { text-decoration: none; color: var(--light-text-color); }
-  .recent_works a:hover { text-decoration: none; }
+  .recent_works, .recent_works_art { border-style: solid; padding-top: 0; padding-bottom: 8px; border-width: 0 0 1px 0; line-height: 0.8rem; font-size: 2rem; margin-bottom: 32px; }
+  .recent_works h1, .recent_works_art h1 { line-height: 2.5rem; margin-top: -16px; }
+  .recent_works h2, .recent_works h3, .recent_works_art h2, .recent_works_art h3 { line-height: 0.8rem; }
+  .recent_works h1, .recent_works h2, .recent_works h3, .recent_works_art h1, .recent_works_art h2, .recent_works_art h3 { padding: 0 0 0 0; padding-left: 8px; }
+  .recent_works a, .recent_works_art a { text-decoration: none; color: var(--light-text-color); }
+  .recent_works a:hover, .recent_works_art a:hover { text-decoration: none; }
   .recent_works:hover { border-width: 0px 0px 1px 0px; } }
 
 @media only screen and (max-width: 1024px) and (min-width: 729px) { .nav { display: none; }

@@ -94,9 +94,8 @@
   margin-bottom: $block3;
   img {
     height: 320px;
-
     width: 100%;
-    margin-bottom: $block2;
+
     object-fit: cover;
   }
   img:hover {
@@ -121,19 +120,42 @@
 
 .recent_works {
   border-style: solid;
-
   border-width: 0px 0px 0px 1px;
   font-size: 2rem;
   margin-bottom: $block3;
   padding-right: $block3;
   text-overflow: ellipsis;
-
   h1 {
     line-height: 2rem;
     margin-bottom: -4px;
     margin-top: -0.2px;
   }
+  h1,
+  h2,
+  h3 {
+    padding: 0 0 0 $block3;
+  }
+  a {
+    text-decoration: none;
+    color: $bodyColor;
+  }
+  a:hover {
+    text-decoration: line-through;
+  }
+}
 
+.recent_works_art {
+  border-style: solid;
+  border-width: 0px 0px 0px 1px;
+  font-size: 2rem;
+  margin-bottom: $block3;
+
+  text-overflow: ellipsis;
+  h1 {
+    line-height: 2rem;
+    margin-bottom: -4px;
+    margin-top: -0.2px;
+  }
   h1,
   h2,
   h3 {
@@ -279,26 +301,22 @@
     }
   }
 
-  .recent_works {
+  .recent_works, .recent_works_art {
     border-style: solid;
     padding-top: 0;
     padding-bottom: $block1;
-
     border-width: 0 0 1px 0;
     line-height: 0.8rem;
     font-size: 2rem;
     margin-bottom: $block3;
-
     h1 {
       line-height: 2.5rem;
       margin-top: -$block2;
     }
-
     h2,
     h3 {
       line-height: 0.8rem;
     }
-
     h1,
     h2,
     h3 {
@@ -313,7 +331,7 @@
       text-decoration: none;
     }
   }
-
+  
   .recent_works:hover {
     border-width: 0px 0px 1px 0px;
   }
