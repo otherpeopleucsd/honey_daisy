@@ -42,9 +42,12 @@ fields:
 - name: thumb
   type: file
   config:
-    maxSize: 250
+    maxSize: 3
   label: Thumb
   description: Image displayed on homepage (for Art only)
+  showOnly:
+    field: category
+    value: Visual Arts
 - name: layout
   type: text
   config:
