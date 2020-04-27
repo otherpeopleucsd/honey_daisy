@@ -8,22 +8,23 @@
     background-color: $bodyColor;
     overflow-x: hidden;
     transition: 0.2s;
+    font-size: .7rem;
+    font-family: "basier_circleregular";
 
-    font-family: "basier_circlesemi";
-    font-size: 1.8rem;
     font-weight: 100;
     color: $backgroundColor;
-    h3 {
-        margin-left: $block2;
+    text-align: right;
+    h1 {
+        line-height: 3.5rem;
+        font-size: 2.5rem;    
     }
 }
 
 .overlay-content {
-    position: relative;
-    top: $block4;
-    width: 100%;
+    position: absolute;
+    bottom: $block2;
+    right: $block2;
 
-    margin-top: 30px;
 }
 
 .overlay a {
@@ -32,13 +33,9 @@
     color: $backgroundColor;
     display: block;
     transition: 0.3s;
-    margin-left: $block2;
 }
 
-.overlay a:hover,
-.overlay a:focus {
-    text-decoration: line-through;
-}
+
 
 .overlay .closebtn {
     position: absolute;
@@ -79,14 +76,12 @@ span {
 }
 
 @media only screen and (max-device-width: 320px),
-    only screen and (min-device-width: 560px) and (max-device-width: 1136px) and (-webkit-min-device-pixel-ratio: 2) {
-    .overlay a {
-        margin-left: $block1;
-    }
-
-    .nav_column_child {
-        width: 93%;
-    }
+    only screen and (min-device-width: 560px) and (max-device-width: 1136px) and (-webkit-min-device-pixel-ratio: 3) {
+        .overlay-content {
+            position: relative;
+            margin-top: $block6;
+            right: $block2;
+        }
 }
 
 @media only screen and (max-width: 728px) {
@@ -100,23 +95,6 @@ span {
         display: initial;
     }
 
-    .nav_title {
-        h3 {
-            margin-left: $block3;
-        }
-    }
-
-    .overlay a {
-        margin-left: $block3;
-    }
-
-    .nav_column_child {
-        width: 92%;
-        margin: auto;
-        padding-top: $block4;
-        display: grid;
-        grid-template-columns: auto auto;
-    }
 }
 
 @media screen and (max-height: 450px) {

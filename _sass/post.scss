@@ -94,6 +94,13 @@
   margin-top: $block3;
 }
 
+
+
+
+
+
+
+
 @media only screen and (max-width: 728px) {
   .post_body,
   .post_column {
@@ -102,11 +109,21 @@
   }
 
   .post_title {
-    font-size: 5rem;
-    line-height: 5rem;
+    font-size: 4.2rem;
+    line-height: 4.2rem;
     width: 100%;
     hyphens: auto;
+    padding-bottom: 0;
+    h1 {
+      margin-left: $block1;
+      font-size: 1.2rem;
+      line-height: 2rem;
+      padding-top: $block2;
+    }
   }
+
+
+  
 
   .post_title,
   .post_content {
@@ -117,7 +134,7 @@
   }
   .post_content {
     font-size: 1.2rem;
-    line-height: 1.8rem;
+    line-height: 1.5rem;
 
     h1 {
       font-size: 0.8rem;
@@ -132,6 +149,22 @@
     margin-top: $block1;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

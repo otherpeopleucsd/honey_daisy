@@ -14,6 +14,9 @@
 
 <body>
 
+
+
+
   {{ content}}
 
   {% include header.html %}
@@ -28,12 +31,12 @@
     <div class="title">OTHER<br>PEOPLE<br></div>
     <div class="index_column">
       <div class="title_sub">
-      <h3>{{ page.quarter }} — Collection No. {{ page.collection_no_ }}</h3>
-    </div>
-    <br>
-    <div class="title_sub">
-      <a href="{{ site.url }}{{ site.baseurl }}/collection"> <button class="button">Discover</button></a>
-    </div>
+        <h3>{{ page.quarter }} — Collection No. {{ page.collection_no_ }}</h3>
+      </div>
+      <br>
+      <div class="title_sub">
+        <a href="{{ site.url }}{{ site.baseurl }}/collection"> <button class="button">Discover</button></a>
+      </div>
 
     </div>
 
@@ -113,7 +116,7 @@
             </div>
             <h1>{{ post.title }}</h1>
           </a>
-            <h3> by {{ post.contributor }}</h3>
+          <h3> by {{ post.contributor }}</h3>
 
           <h3>
             <b>{{ post.category }}</b> —
@@ -134,9 +137,8 @@
   <!-- THIS DISABLES RIGHT CLICK -->
   {% include disable_copy.html %}
   {% include popup.html %}
-  
-  <!-- {% include filters.html %} -->
 
+  <!-- {% include filters.html %} -->
 
 
 
