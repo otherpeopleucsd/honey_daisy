@@ -39,9 +39,10 @@ footer {
 }
 
 .footer_intro {
-  font-family: "basier_circlesemi";
+font-size: .4rem;
+  font-family: "basier_circleregular";
   list-style-type: none;
-
+fill: $backgroundColor;
   line-height: 1.5rem;
 
   a {
@@ -50,6 +51,10 @@ footer {
   }
   a:hover {
     text-decoration: line-through;
+  }
+  svg {
+    width: $block5;
+  
   }
 }
 
