@@ -26,6 +26,7 @@
   width: 95%;
   position: relative;
   padding: $block2 0 $block4 0;
+  margin-bottom: -$block5;
 }
 
 
@@ -65,7 +66,7 @@
   h3 {
     line-height: 0rem;
     margin-left: $block1;
-    font-weight: bold;
+    font-weight: normal;
   }
 }
 
@@ -135,7 +136,13 @@
 
 
 @media only screen and (max-width: 1024px) and (min-width: 729px) {
-
+  .post_body2 {
+    margin: auto;
+    width: 95%;
+    position: relative;
+    padding: $block2 0 $block4 0;
+    margin-bottom: -$block3;
+  }
 
   .post_body {
     font-family: Arial, Helvetica, sans-serif;

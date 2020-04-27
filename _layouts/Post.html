@@ -46,11 +46,11 @@
 
 
 
-   <div class="copyright_footer">
-      <h4>This work belongs to {{ page.contributor }} ©
-        <br> Copy, reproduction, and modification are not permitted without authorization
-      </h4>
-    </div>
+      <div class="copyright_footer">
+        <h4>This work belongs to {{ page.contributor }} ©
+          <br> Copy, reproduction, and modification are not permitted without authorization
+        </h4>
+      </div>
     </div>
 
 
@@ -142,9 +142,10 @@
     <div class="category">Explore</div>
 
     <div class="recent_works_parent">
+
+
       {% if page.previous.url %}
       <div class="recent_works">
-
         <a href="{{page.previous.url}}">
           <h1>{{page.previous.title}}</h1>
           <h3> by {{ page.previous.contributor }}</h3>
@@ -154,9 +155,9 @@
           <time
             datetime="{{ page.previous.date | date: "%Y-%m-%d" }}">{{ page.previous.date | date_to_long_string }}</time>
         </h3>
-
       </div>
       {% endif %}
+
 
       {% if page.next.url %}
       <div class="recent_works">
@@ -170,6 +171,11 @@
         </h3>
       </div>
       {% endif %}
+
+
+
+
+
     </div>
 
 

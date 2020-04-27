@@ -39,7 +39,7 @@ footer {
 }
 
 .footer_intro {
-font-size: .4rem;
+font-size: .7rem;
   font-family: "basier_circleregular";
   list-style-type: none;
 fill: $backgroundColor;
@@ -54,7 +54,8 @@ fill: $backgroundColor;
   }
   svg {
     width: $block5;
-  
+    fill: $backgroundColor;
+    margin-bottom: $block2;
   }
 }
 
@@ -91,6 +92,9 @@ fill: $backgroundColor;
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 729px) {
+  .footer_container {
+    width: 90%;
+  }
   footer {
 margin-top: 0;
   }
@@ -100,6 +104,7 @@ margin-top: 0;
 
 
 @media screen and (min-width: 2400px) {
+
 
   footer {
 
