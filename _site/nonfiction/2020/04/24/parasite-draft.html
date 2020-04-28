@@ -15,6 +15,9 @@
   <meta property="og:description"        content="" />
   <meta property="og:image"              content="" />
 
+  <meta name="description" content="">
+  <meta name="keywords" content="Nonfiction">
+  <meta name="author" content="Hemmy Chun">
 
 
     <link rel="icon" type="image/svg" href="../assets/favicons/TheFavicon.svg" />
@@ -288,6 +291,20 @@ if (theme === "dark") {
 <a  title="Email" href="#" onclick="javascript:window.location='mailto:?subject=In Honor of Parasite&body=In Honor of Parasite ' + window.location;" class="share-btn email">
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 0l-6 22-8.129-7.239 7.802-8.234-10.458 7.227-7.215-1.754 24-12zm-15 16.668v7.332l3.258-4.431-3.258-2.901z"/></svg>
 </a>
+
+
+
+
+
+<script>
+$(document).ready(function() {
+  $('.share-btn').click(function(e) {
+      e.preventDefault();
+      window.open($(this).attr('href'), 'share-btnWindow', 'height=450, width=550, top=' + ($(window).height() / 2 - 275) + ', left=' + ($(window).width() / 2 - 225) + ', toolbar=0, location=0, menubar=0, directories=0, scrollbars=0');
+      return false;
+  });
+});
+</script>
 
 
 
