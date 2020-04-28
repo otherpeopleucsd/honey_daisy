@@ -299,6 +299,9 @@ if (theme === "dark") {
 
 
 
+  <a class="fbsharelink" data-shareurl="YOURLINK">Facebook</a>
+
+
 
 <script>
   $(document).ready(function () {
@@ -308,6 +311,18 @@ if (theme === "dark") {
       return false;
     });
   });
+</script>
+
+
+
+<script language="javascript">
+$('.fbsharelink').click( function() 
+{
+    var shareurl = $(this).data('shareurl');
+    window.open('https://www.facebook.com/sharer/sharer.php?u='+escape(shareurl)+'&t='+document.title, '', 
+    'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');
+    return false;
+});
 </script>
     
 
