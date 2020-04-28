@@ -184,16 +184,21 @@
 
 
 
+.share {
+
+  margin-left:auto; 
+}
 
 
 
 
-.share-btn {
+
+.share-btn, .share-email {
   display: inline-block;
-  color: #ffffff;
-  fill: #ffffff;
+  color: $backgroundColor;
+  fill: $bodyColor;
   border: none;
-  padding: 3px 20px 3px 20px;
+  padding: 3px 20px 3px 0px;
   outline: none;
   text-align: center;
   font-family: "basier_circleregular";
@@ -212,18 +217,20 @@
 }
 
 .share-btn:focus,
-.share-btn:hover {
+.share-btn:hover,
+.share-email:focus,
+.share-email:hover {
   text-decoration: none;
-  opacity: 0.8;
+  opacity: 0.5;
 }
 
-.share-btn:active {
-  color: #e2e2e2;
-}
+// .share-btn:active {
+//   color: #e2e2e2;
+// }
 
-.share-btn.twitter { background: #55acee; }
-.share-btn.facebook { background: #3B5998; }
-.share-btn.email { background: #444444; }
+// .share-btn.twitter { background: #55acee; }
+// .share-btn.facebook { background: #3B5998; }
+// .share-btn.email { background: #444444; }
 
 
 
