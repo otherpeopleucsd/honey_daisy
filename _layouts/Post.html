@@ -14,11 +14,24 @@
 <body>
 
 
+
+
+
+
+
+
+
+
+
+
+
   {% include header.html %}
 
   <!-- <div class= "back"><a href="{{ site.url }}{{ site.baseurl }}">⬅</a></div> -->
 
   <div class="post_body">
+
+
 
     <div class="post_column">
 
@@ -41,8 +54,11 @@
 
 
     <div class="post_content">
-      {{ content}}
 
+
+
+
+      {{ content}}
 
 
 
@@ -52,7 +68,16 @@
           <br> Copy, reproduction, and modification are not permitted without authorization
         </h4>
       </div>
+
+
+<br>
+      {% include share.html %}
+
+
+
     </div>
+
+
 
 
 
@@ -186,6 +211,12 @@
   {% include footer.html %}
 
   {% include disable_copy.html %}
+
+
+
+
+
+
 
 
 
