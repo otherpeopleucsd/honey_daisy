@@ -230,7 +230,7 @@ footer { position: relative; font-size: 0.9rem; margin: auto; width: 100%; color
 
 .post_title_flex { display: flex; }
 
-.post_title_flex h3 { margin-right: 16px; }
+.post_title_flex h3 { margin-right: 32px; }
 
 .post_content { width: 70%; font-size: 1.2rem; line-height: 1.8rem; }
 
@@ -268,11 +268,14 @@ footer { position: relative; font-size: 0.9rem; margin: auto; width: 100%; color
   .post_body { font-family: Arial, Helvetica, sans-serif; margin: auto; width: 100%; position: relative; padding: 16px 0 64px 0; overflow: hidden; }
   .post_body img { width: 110vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; } }
 
-.share-btn, .share-email { display: inline-block; color: var(--background-color); fill: var(--light-text-color); border: none; padding: 3px 20px 3px 0px; outline: none; text-align: center; font-family: "basier_circleregular"; text-decoration: none; text-transform: uppercase; font-size: .7rem; margin: 0 0.25em; border-radius: 10px; line-height: 0px; }
+.share-btn, .share-email { display: inline-block; color: var(--background-color); fill: var(--light-text-color); border: none; padding: 3px 20px 3px 0px; outline: none; text-align: center; font-family: "basier_circleregular"; text-decoration: none; text-transform: uppercase; font-size: 0.7rem; margin: 0 0.25em; border-radius: 10px; line-height: 0px; }
 
 .share-btn svg, .share-email svg { width: 15px; margin: none; padding: none; }
 
 .share-btn:focus, .share-btn:hover, .share-email:focus, .share-email:hover { text-decoration: none; opacity: 0.5; }
+
+@media only screen and (max-device-width: 320px), only screen and (min-device-width: 560px) and (max-device-width: 1136px) and (-webkit-min-device-pixel-ratio: 3) { .post_title_flex { display: inline; }
+  .post_title_flex h3 { line-height: .9rem; } }
 
 .overlay { height: 100%; width: 0; position: fixed; z-index: 4; top: 0; right: 0; background-color: var(--light-text-color); overflow-x: hidden; transition: 0.2s; font-size: .7rem; font-family: "basier_circleregular"; font-weight: 100; color: var(--background-color); text-align: right; }
 

@@ -3,8 +3,6 @@
 //   border-width: 1px;
 // }
 
-
-
 .post_title,
 .post_content {
   animation: fadeInAnimation ease 2s;
@@ -16,8 +14,11 @@
 
 .post_title_flex {
   display: flex;
+  
 h3{
-margin-right: $block2;}
+  margin-right: $block3;
+}
+
 }
 
 .post_content {
@@ -42,8 +43,6 @@ margin-right: $block2;}
   margin-bottom: -$block5;
 }
 
-
-
 .back {
   position: relative;
   font-size: 3rem;
@@ -55,8 +54,6 @@ margin-right: $block2;}
     color: $bodyColor;
   }
 }
-
-
 
 .post_title {
   padding-top: $block4;
@@ -104,14 +101,13 @@ margin-right: $block2;}
   margin-top: $block3;
 }
 
-
-
-
-
-
-
-
 @media only screen and (max-width: 728px) {
+  .post_title_flex {
+
+
+
+  }
+
   .post_body,
   .post_column {
     margin-top: $block3;
@@ -131,9 +127,6 @@ margin-right: $block2;}
       padding-top: $block2;
     }
   }
-
-
-  
 
   .post_title,
   .post_content {
@@ -160,8 +153,6 @@ margin-right: $block2;}
   }
 }
 
-
-
 @media only screen and (max-width: 1024px) and (min-width: 729px) {
   .post_body2 {
     margin: auto;
@@ -175,7 +166,7 @@ margin-right: $block2;}
     font-family: Arial, Helvetica, sans-serif;
     margin: auto;
     width: 100%;
-  
+
     position: relative;
     padding: $block2 0 $block4 0;
     overflow: hidden;
@@ -190,16 +181,8 @@ margin-right: $block2;}
   }
 }
 
-
-
-
-
-
-
-
-
-
-.share-btn, .share-email {
+.share-btn,
+.share-email {
   display: inline-block;
   color: $backgroundColor;
   fill: $bodyColor;
@@ -210,7 +193,7 @@ margin-right: $block2;}
   font-family: "basier_circleregular";
   text-decoration: none;
   text-transform: uppercase;
-  font-size: .7rem;
+  font-size: 0.7rem;
   margin: 0 0.25em;
   border-radius: 10px;
   line-height: 0px;
@@ -238,15 +221,14 @@ margin-right: $block2;}
 // .share-btn.facebook { background: #3B5998; }
 // .share-btn.email { background: #444444; }
 
+@media only screen and (max-device-width: 320px),
+  only screen and (min-device-width: 560px) and (max-device-width: 1136px) and (-webkit-min-device-pixel-ratio: 3) {
+  .post_title_flex {
+    display: inline;
 
-
-
-
-
-
-
-
-
-
-
-
+  
+    h3{
+      line-height: .9rem;
+    }
+  }
+}
