@@ -7,6 +7,16 @@ fields:
   config:
     required: false
   label: Title
+- name: date
+  type: datetime
+  label: Date
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+    export_format: ''
 - name: contributor
   type: text
   config:
@@ -29,16 +39,6 @@ fields:
       file: 
       path: 
   label: Category
-- name: date
-  type: datetime
-  label: Date
-  description: ''
-  config:
-    required: false
-    date_format: 
-    time_format: 
-    display_utc: false
-    export_format: ''
 - name: thumb
   type: file
   config:
@@ -76,4 +76,5 @@ pages:
 - _posts/2020-04-24-instructions-for-lemonade.md
 - _posts/2020-04-24-parasite-draft.md
 - _posts/2020-04-24-through-fuchsia-colored-glasses.md
+- _posts/fronteras.md
 - _posts/rain-on-the-rooftops.md
