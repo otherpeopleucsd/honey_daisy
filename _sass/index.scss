@@ -53,7 +53,6 @@
 
 .category {
   padding-bottom: $block3;
-
   font-family: "basier_circlesemi";
   font-size: 0.8rem;
   text-transform: uppercase;
@@ -167,9 +166,12 @@
     margin-bottom: -4px;
     margin-top: -0.2px;
     transition: .3s ease;
+
   }
   h1:hover {
     font-family: ogg;
+
+    line-height: 2.3rem;
   }
   h1,
   h2,
@@ -350,6 +352,11 @@
     h2,
     h3 {
       line-height: 0.8rem;
+    }
+    h1:hover {
+      font-family: ogg;
+  
+      line-height: 2.5rem;
     }
     h1,
     h2,

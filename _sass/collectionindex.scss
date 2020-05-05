@@ -1,0 +1,63 @@
+.block5 {
+    padding-top: $block5;
+}
+
+.collection_parent{
+
+    display: grid;
+    grid-template-columns: 30% 70%;
+
+}
+
+.collection_left {
+    padding-right: $block3;
+}
+
+
+
+.collection_thumb {
+    overflow: hidden;
+    margin-bottom: $block3;
+    img {
+      height: 500px;
+      width: 100%;
+  
+      object-fit: cover;
+    }
+    img:hover {
+      opacity: 0.5;
+      transition: 0.3s;
+    }
+  }
+
+
+
+
+.collection_featured {
+
+
+    font-size: 2rem;
+    margin-bottom: $block3;
+  
+    text-overflow: ellipsis;
+    h1 {
+      line-height: 2rem;
+      margin-bottom: -4px;
+      margin-top: -0.2px;
+    }
+    .thumb:hover ~ h1 {
+      font-family: ogg;
+    }
+    h1:hover {
+      font-family: ogg;
+    }
+    h1,
+    h2,
+    h3 {
+      padding: 0 0 0 $block3;
+    }
+    a {
+      text-decoration: none;
+      color: $bodyColor;
+    }
+  }

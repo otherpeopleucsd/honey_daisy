@@ -8,8 +8,6 @@ h3 { font-family: "basier_circlesemi"; font-size: 0.8rem; text-transform: upperc
 
 h4 { font-family: "basier_circleregular"; font-size: 0.7rem; text-transform: uppercase; opacity: 0.2; font-weight: normal; line-height: 1rem; }
 
-html { transition: 3s ease; }
-
 html, html[data-theme="light"] { --background-color: #f4f6f8; --light-text-color: #151515; --link-color: rgb(0, 112, 201); --main-background-color: rgb(255, 255, 255); --main-text-color: rgb(51, 51, 51); }
 
 html[data-theme="dark"] { --background-color: #151515; --light-text-color: #f4f6f8; --link-color: rgb(100, 210, 255); --main-background-color: rgb(28, 28, 30); --main-text-color: rgb(229, 229, 234); }
@@ -96,7 +94,7 @@ header a:hover { cursor: pointer; opacity: 0.5; }
 
 .recent_works h1 { margin-bottom: -4px; margin-top: -0.2px; transition: .3s ease; }
 
-.recent_works h1:hover { font-family: ogg; }
+.recent_works h1:hover { font-family: ogg; line-height: 2.3rem; }
 
 .recent_works h1, .recent_works h2, .recent_works h3 { padding: 0 0 0 32px; margin: 0 0 0.7rem 0; }
 
@@ -140,6 +138,7 @@ header a:hover { cursor: pointer; opacity: 0.5; }
   .recent_works, .recent_works_art { border-style: solid; padding-top: 0; padding-bottom: 8px; border-width: 0 0 1px 0; line-height: 0.8rem; font-size: 2rem; margin-bottom: 32px; }
   .recent_works h1, .recent_works_art h1 { line-height: 2.5rem; margin-top: -16px; }
   .recent_works h2, .recent_works h3, .recent_works_art h2, .recent_works_art h3 { line-height: 0.8rem; }
+  .recent_works h1:hover, .recent_works_art h1:hover { font-family: ogg; line-height: 2.5rem; }
   .recent_works h1, .recent_works h2, .recent_works h3, .recent_works_art h1, .recent_works_art h2, .recent_works_art h3 { padding: 0 0 0 0; padding-left: 8px; }
   .recent_works a, .recent_works_art a { text-decoration: none; color: var(--light-text-color); }
   .recent_works a:hover, .recent_works_art a:hover { text-decoration: none; }
@@ -321,5 +320,29 @@ span svg { fill: var(--light-text-color); }
 
 @media only screen and (max-width: 728px) and (min-width: 321px) { .popup { display: grid; grid-template-columns: auto; }
   #btnClose { border: 2px solid white; padding: 8px 16px 8px 16px; text-decoration: none; color: #ffffff; text-align: center; height: 15px; width: 64px; margin-right: 16px; margin-top: 8px; } }
+
+.block5 { padding-top: 128px; }
+
+.collection_parent { display: grid; grid-template-columns: 30% 70%; }
+
+.collection_left { padding-right: 32px; }
+
+.collection_thumb { overflow: hidden; margin-bottom: 32px; }
+
+.collection_thumb img { height: 500px; width: 100%; object-fit: cover; }
+
+.collection_thumb img:hover { opacity: 0.5; transition: 0.3s; }
+
+.collection_featured { font-size: 2rem; margin-bottom: 32px; text-overflow: ellipsis; }
+
+.collection_featured h1 { line-height: 2rem; margin-bottom: -4px; margin-top: -0.2px; }
+
+.collection_featured .thumb:hover ~ h1 { font-family: ogg; }
+
+.collection_featured h1:hover { font-family: ogg; }
+
+.collection_featured h1, .collection_featured h2, .collection_featured h3 { padding: 0 0 0 32px; }
+
+.collection_featured a { text-decoration: none; color: var(--light-text-color); }
 
 /*# sourceMappingURL=main.css.map */
