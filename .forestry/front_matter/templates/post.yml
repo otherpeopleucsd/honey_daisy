@@ -48,6 +48,14 @@ fields:
   showOnly:
     field: category
     value: Visual Arts
+- name: collection
+  type: boolean
+  label: Collection
+  description: Toggle if part of print magazine
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags
 - name: layout
   type: text
   config:
