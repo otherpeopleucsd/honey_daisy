@@ -164,9 +164,9 @@
   text-overflow: ellipsis;
 
   h1 {
-    line-height: 2rem;
     margin-bottom: -4px;
     margin-top: -0.2px;
+    transition: .3s ease;
   }
   h1:hover {
     font-family: ogg;
@@ -175,6 +175,10 @@
   h2,
   h3 {
     padding: 0 0 0 $block3;
+    margin: 0 0 0.7rem 0;
+  }
+  h3 {
+    line-height: 1rem !important;
   }
   a {
     text-decoration: none;
@@ -420,7 +424,6 @@
     }
   }
 }
-
 
 @media screen and (min-width: 2400px) {
   .title {

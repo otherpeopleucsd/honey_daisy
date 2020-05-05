@@ -92,11 +92,13 @@ header a:hover { cursor: pointer; opacity: 0.5; }
 
 .recent_works { border-style: solid; border-width: 0px 0px 0px 1px; font-size: 2rem; margin-bottom: 32px; padding-right: 32px; text-overflow: ellipsis; }
 
-.recent_works h1 { line-height: 2rem; margin-bottom: -4px; margin-top: -0.2px; }
+.recent_works h1 { margin-bottom: -4px; margin-top: -0.2px; transition: .3s ease; }
 
 .recent_works h1:hover { font-family: ogg; }
 
-.recent_works h1, .recent_works h2, .recent_works h3 { padding: 0 0 0 32px; }
+.recent_works h1, .recent_works h2, .recent_works h3 { padding: 0 0 0 32px; margin: 0 0 0.7rem 0; }
+
+.recent_works h3 { line-height: 1rem !important; }
 
 .recent_works a { text-decoration: none; color: var(--light-text-color); }
 
@@ -221,7 +223,7 @@ footer { position: relative; font-size: 0.9rem; margin: auto; width: 100%; color
   .footer_intro, .footer_module { text-align: left; padding: 16px; } }
 
 @media only screen and (max-width: 1024px) and (min-width: 729px) { .footer_container { width: 90%; }
-  footer { margin-top: 0; } }
+  footer { margin-top: 64px; } }
 
 @media screen and (min-width: 2400px) { footer { width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; }
   .footer_container { width: 65%; } }
