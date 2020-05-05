@@ -228,9 +228,7 @@ footer { position: relative; font-size: 0.9rem; margin: auto; width: 100%; color
 
 .post_title, .post_content { animation: fadeInAnimation ease 2s; animation-iteration-count: 1; animation-fill-mode: forwards; padding-left: 64px; }
 
-.post_title_flex { display: flex; }
-
-.post_title_flex h3 { margin-right: 32px; }
+.post_title_flex { display: grid; grid-template-columns: 1fr; }
 
 .post_content { width: 70%; font-size: 1.2rem; line-height: 1.8rem; }
 

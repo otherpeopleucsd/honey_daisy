@@ -25,40 +25,18 @@
 
 <body>
 
-
-
-
-
-
-
-
-
-
-
-
-
   {% include header.html %}
 
-  <!-- <div class= "back"><a href="{{ site.url }}{{ site.baseurl }}">⬅</a></div> -->
-
   <div class="post_body">
-
-
-
     <div class="post_column">
-
       <div class="post_title">{{ page.title }}<br>
         <h1>by {{ page.contributor }}</h1>
-
         <div class="post_title_flex">
         <h3> <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ page.date | date_to_long_string }}</time> —
-          {{page.category}} </h3>       
-
+          {{page.category}} </h3>      
           <h3>{% include minsread.html %}</h3>
       </div>
     </div>
-
-
     </div>
 
     <!-- <div class="featured_image">
@@ -71,15 +49,7 @@
 
 
     <div class="post_content">
-
-
-
-
       {{ content}}
-
-
-
-
       <div class="copyright_footer">
         <h4>This work belongs to {{ page.contributor }} ©
           <br> Copy, reproduction, and modification are not permitted without authorization
