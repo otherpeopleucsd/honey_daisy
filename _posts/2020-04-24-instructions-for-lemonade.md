@@ -9,6 +9,6 @@ thumb: ''
 ---
 ![](/uploads/Hemmy.JPG)
 
-<center>_"Cry some sugar, plant a seed."_</center>
+<center><i>"Cry some sugar, plant a seed."</i></center>
 
 The environment is our everything; show it some love.
