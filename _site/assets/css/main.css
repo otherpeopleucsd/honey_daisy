@@ -8,6 +8,8 @@ h3 { font-family: "basier_circlesemi"; font-size: 0.8rem; text-transform: upperc
 
 h4 { font-family: "basier_circleregular"; font-size: 0.7rem; text-transform: uppercase; opacity: 0.2; font-weight: normal; line-height: 1rem; }
 
+html { transition: 3s ease; }
+
 html, html[data-theme="light"] { --background-color: #f4f6f8; --light-text-color: #151515; --link-color: rgb(0, 112, 201); --main-background-color: rgb(255, 255, 255); --main-text-color: rgb(51, 51, 51); }
 
 html[data-theme="dark"] { --background-color: #151515; --light-text-color: #f4f6f8; --link-color: rgb(100, 210, 255); --main-background-color: rgb(28, 28, 30); --main-text-color: rgb(229, 229, 234); }
@@ -257,6 +259,8 @@ footer { position: relative; font-size: 0.9rem; margin: auto; width: 100%; color
 .copyright_footer { margin-top: 32px; }
 
 @media only screen and (max-width: 728px) { .post_body, .post_column { margin-top: 32px; width: 100%; }
+  .post_body { overflow: hidden; }
+  .post_body img { width: 100vw; position: relative; left: 50%; margin-left: -50vw; }
   .post_title { font-size: 4.2rem; line-height: 4.2rem; width: 100%; hyphens: auto; padding-bottom: 0; }
   .post_title h1 { margin-left: 8px; font-size: 1.2rem; line-height: 2rem; padding-top: 16px; }
   .post_title, .post_content { padding-top: 32px; margin: auto; width: 90%; padding-left: 0; }
@@ -275,7 +279,7 @@ footer { position: relative; font-size: 0.9rem; margin: auto; width: 100%; color
 .share-btn:focus, .share-btn:hover, .share-email:focus, .share-email:hover { text-decoration: none; opacity: 0.5; }
 
 @media only screen and (max-device-width: 320px), only screen and (min-device-width: 560px) and (max-device-width: 1136px) and (-webkit-min-device-pixel-ratio: 3) { .post_title_flex { display: inline; }
-  .post_title_flex h3 { line-height: .9rem; } }
+  .post_title_flex h3 { line-height: 0.9rem; } }
 
 .overlay { height: 100%; width: 0; position: fixed; z-index: 4; top: 0; right: 0; background-color: var(--light-text-color); overflow-x: hidden; transition: 0.2s; font-size: .7rem; font-family: "basier_circleregular"; font-weight: 100; color: var(--background-color); text-align: right; }
 
