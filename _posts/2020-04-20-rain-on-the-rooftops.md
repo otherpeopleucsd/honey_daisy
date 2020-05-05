@@ -45,7 +45,9 @@ Because in a place, on a day, hell, in a month where everything seemed to be ble
 
 He coughed (choked, really), diverted his eyes, and walked away.
 
-![](/uploads/Image from iOS (1).JPG)For three weeks, he purposefully took the same route to the flower shop to test his luck, hoping to see the woman again, and each time he was surprised that it worked. For three weeks they observed one another from afar—by now they were in some tango of distant acquaintances; he would pass by, she would wave, and they would both give a soft sort of smile. Not once did it occur to him to walk inside (seeing as he was usually already running late) and she was never there when he walked in during the noon to grab his coffee.
+![](/uploads/Image from iOS (1).JPG)
+
+For three weeks, he purposefully took the same route to the flower shop to test his luck, hoping to see the woman again, and each time he was surprised that it worked. For three weeks they observed one another from afar—by now they were in some tango of distant acquaintances; he would pass by, she would wave, and they would both give a soft sort of smile. Not once did it occur to him to walk inside (seeing as he was usually already running late) and she was never there when he walked in during the noon to grab his coffee.
 
 And then on the fourth week, half asleep on the metro and barely keeping himself from falling on the couple sitting in front of him, he turned around only to come face to face with the mysterious woman from the coffee shop. If her shocked expression was anything to go by, she was just as surprised as he was to see him there, gripping tiredly to the rusty handrail.
 
