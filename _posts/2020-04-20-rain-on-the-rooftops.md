@@ -3,8 +3,9 @@ category: Fiction
 layout: Post
 title: Rain on the Rooftops
 contributor: Meryem Bahadir
-date: 2020-05-04 07:00:00 +0000
+date: 2020-05-04T07:00:00.000+00:00
 thumb: ''
+tags: []
 
 ---
 There’s a certain indescribable chill that accompanies trudging home to an empty apartment. The young man felt it in the doorway to his home, on the stairway to the thirteenth floor, in the hallway of the eerily quiet apartment complex. He felt it when the knob jingled at ten past midnight, when he walked in and his steps were quiet, unsure and tired from the dragging day.
@@ -37,7 +38,7 @@ The walk to the flower shop he interned at was not a hard walk. Naples was beaut
 
 The flowers were still on his mind when he strolled by the cafe at which he picked up his mid-day orders. He would’ve passed by too, if it hadn’t been for the woman sitting at the front of the window, hands wrapped softly around a large mug of coffee and a distinct braid trickling down the side of her chest.
 
-He cleared his throat, fixed his collar, ran a three fingers through unruly hair, though for what he was careful he did not know.
+He cleared his throat, fixed his collar, ran three fingers through unruly hair, though for what he was careful he did not know.
 
 If he were to be honest, he’d admit that perhaps he was staring a second too long. If he were to be honest, he’d say that it wasn’t her braid, or her eyes, or the _fiore_ brooch on the collar of her coat that caught his attention, but instead her smile.
 
@@ -47,7 +48,7 @@ He coughed (choked, really), diverted his eyes, and walked away.
 
 ![](/uploads/Image from iOS (1).JPG)
 
-For three weeks, he purposefully took the same route to the flower shop to test his luck, hoping to see the woman again, and each time he was surprised that it worked. For three weeks they observed one another from afar—by now they were in some tango of distant acquaintances; he would pass by, she would wave, and they would both give a soft sort of smile. Not once did it occur to him to walk inside (seeing as he was usually already running late) and she was never there when he walked in during the noon to grab his coffee.
+For three weeks, he purposefully took the same route to the flower shop to test his luck, hoping to see the woman again, and each time he was surprised that it worked. For three weeks they observed one another from afar—by now they were in some tango of distant acquaintances; he would pass by, she would wave, and they would both give a soft sort of smile. Not once did it occur to him to walk inside (seeing as he was usually already running late) and she was never there when he walked in during the afternoon to grab his coffee.
 
 And then on the fourth week, half asleep on the metro and barely keeping himself from falling on the couple sitting in front of him, he turned around only to come face to face with the mysterious woman from the coffee shop. If her shocked expression was anything to go by, she was just as surprised as he was to see him there, gripping tiredly to the rusty handrail.
 
@@ -71,8 +72,6 @@ The next evening he met her at the same cafe after work, an arrangement of flowe
 
 They climbed high into the sky, a rooftop abandoned and forgotten. It was beautiful so high up.
 
-The evening was a blur but of the best kind—a mixture of coffee and colors, music and
-
-conversation. And if this is what it felt like to finally live, thirty feet in the air, then so be it.
+The evening was a blur but of the best kind—a mixture of coffee and colors, music and conversation. And if this is what it felt like to finally live, thirty feet in the air, then so be it.
 
 ![](/uploads/PAGE 6.jpg)
