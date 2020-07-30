@@ -1,10 +1,10 @@
 ---
-category: Fiction
+category: Nonfiction
 tags: []
 layout: Post
 title: 'Easy Tea for Sore Throat '
 date: 2020-04-20 07:00:00 +0000
-contributor: Jasmine Torres
+contributor: Jasmine Torres (writer), Nicole Lopez (illustrator)
 thumb: ''
 
 ---
