@@ -107,22 +107,16 @@
     width: 100%;
   }
 
-
   .post_body {
     overflow: hidden;
     img {
- 
       width: 100vw;
       position: relative;
       left: 50%;
 
       margin-left: -50vw;
- 
     }
   }
-
-
-
 
   .post_title {
     font-size: 4.2rem;
@@ -176,7 +170,6 @@
     font-family: Arial, Helvetica, sans-serif;
     margin: auto;
     width: 100%;
-
     position: relative;
     padding: $block2 0 $block4 0;
     overflow: hidden;
@@ -184,16 +177,10 @@
       width: 110vw;
       position: relative;
       left: 50%;
-  
       margin-left: -50vw;
     }
   }
 }
-
-
-
-
-
 
 .share-btn,
 .share-email {

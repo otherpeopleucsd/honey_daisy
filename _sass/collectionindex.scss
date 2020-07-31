@@ -1,17 +1,65 @@
 .block5 {
-    padding-top: $block5;
+    padding-top: $block3;
 }
 
-.collection_parent{
-
+.collection_parent {
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 1fr;
 
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
 }
 
 .collection_left {
+    position: relative;
+    padding: $block3;
+    color: $bodyColor;
+    height: 436px;
+    background-color: rgba(128, 128, 128, 0.05);
     padding-right: $block3;
+    h1,
+    h2,
+    h3 {
+        color: $bodyColor;
+    }
 }
+
+
+
+.discover {
+    position: absolute;
+    left: $block3;
+    right: $block3;
+    bottom: $block3;
+    font-family: "basier_circlemono";
+    font-size: 0.9rem;
+    background-color: $backgroundColor;
+    border: 2px solid $bodyColor;
+    text-decoration: none;
+    color: $bodyColor;
+    text-align: center;
+    transition: 0.3s ease;
+    padding: $block1 $block2 $block1 $block2;
+    cursor: pointer;
+    a {
+      text-decoration: none;
+      color: $bodyColor;
+    }
+  }
+  .discover:hover {
+    color: $backgroundColor;
+    background-color: $bodyColor;
+    a {
+      text-decoration: none;
+      color: $backgroundColor;
+    }
+  }
+
+
 
 
 
@@ -19,45 +67,40 @@
     overflow: hidden;
     margin-bottom: $block3;
     img {
-      height: 500px;
-      width: 100%;
-  
-      object-fit: cover;
+        height: 800px;
+        width: 100%;
+
+        object-fit: cover;
     }
     img:hover {
-      opacity: 0.5;
-      transition: 0.3s;
+        opacity: 0.5;
+        transition: 0.3s;
     }
-  }
-
-
-
+}
 
 .collection_featured {
-
-
     font-size: 2rem;
     margin-bottom: $block3;
-  
+
     text-overflow: ellipsis;
     h1 {
-      line-height: 2rem;
-      margin-bottom: -4px;
-      margin-top: -0.2px;
+        line-height: 2rem;
+        margin-bottom: -4px;
+        margin-top: -0.2px;
     }
     .thumb:hover ~ h1 {
-      font-family: ogg;
+        font-family: ogg;
     }
     h1:hover {
-      font-family: ogg;
+        font-family: ogg;
     }
     h1,
     h2,
     h3 {
-      padding: 0 0 0 $block3;
+        padding: 0 0 0 $block3;
     }
     a {
-      text-decoration: none;
-      color: $bodyColor;
+        text-decoration: none;
+        color: $bodyColor;
     }
-  }
+}

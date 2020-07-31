@@ -5,53 +5,16 @@
 
 
 
-    <div class="collection_left">
-
-
-        {% for tag in site.tags  limit:4 %}
-
-        <div class="recent_works">
-            {% assign t = tag | first %}
-            {% assign posts = tag | last %}
-            {% for post in posts %}
-            {% if post.tags contains t %}
-            <a href="{{ post.url }}">
-                <h1> {{ post.title }}</h1>
-                <h3> by {{ post.contributor }}</h3>
-            </a>
-            <h3>
-                <b>{{ post.category }}</b> —
-                <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
-            </h3>
-            {% endif %}
-            {% endfor %}
-        </div>
-        {% endfor %}
-
-
-
-
-
-
-
-    </div>
-
-
-
-
 
 
     <div class="collection_right">
-
         {% for post in site.categories['Visual Arts']  limit:1 %}
         <div class="collection_featured">
             <a href="{{site.baseurl}}{{ post.url }}">
                 <div class="collection_thumb">
                     <img src="{{site.baseurl}}{{ post.thumb }}">
                 </div>
-
             </a>
-
         </div>
         {% endfor %}
     </div>

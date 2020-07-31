@@ -29,13 +29,14 @@ header {
 }
 
 .nav {
+    display: none;
     z-index: 2;
     position: fixed;
     margin: auto;
     right: $block3;
     height: 0;
     font-family: "basier_circlesemi";
-    line-height: 2.8rem;
+    line-height: 2.3rem;
     text-align: right;
     hr {
         border: none;
@@ -50,7 +51,7 @@ header {
 
     a:hover {
         cursor: pointer;
-        font-family: ogg;
+        // font-family: ogg;
     }
 }
 

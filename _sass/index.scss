@@ -38,20 +38,41 @@
 }
 
 .title {
-  font-family: "basier_circlesemi";
-  font-size: 8rem;
+  // font-family: "basier_circlesemi";
+  font-family: arial;
+  text-transform: uppercase;
+  font-size: 5.5rem;
   text-align: left;
-  line-height: 8rem;
+  line-height: auto;
+
   margin-left: -$block1;
+
+
+  svg {
+    width: 50px;
+    transform: rotate(135deg);
+    .st0 {
+        fill: none;
+        stroke: $bodyColor;
+        stroke-width: 10rem;
+        stroke-miterlimit: 100;
+
+    }
+  }
+
+
 
   h3 {
     letter-spacing: initial;
     line-height: 1.5rem;
     margin-left: $block1;
   }
+
+  
 }
 
 .category {
+  margin-top: $block1;
   padding-bottom: $block3;
   font-family: "basier_circlesemi";
   font-size: 0.8rem;
@@ -102,6 +123,7 @@
 }
 
 .recent_works_parent {
+
   display: grid;
 
   text-align: left;
@@ -169,9 +191,9 @@
 
   }
   h1:hover {
-    font-family: ogg;
-
-    line-height: 2.3rem;
+    // font-family: ogg;
+font-style: italic;
+    // line-height: 2.3rem;
   }
   h1,
   h2,
@@ -201,10 +223,10 @@
     margin-top: -0.2px;
   }
   .thumb:hover ~ h1 {
-    font-family: ogg;
+    // font-family: ogg;
   }
   h1:hover {
-    font-family: ogg;
+    // font-family: ogg;
   }
   h1,
   h2,
@@ -297,6 +319,7 @@
     hyphens: auto;
     line-height: 4.2rem;
     margin-left: 3px;
+
   }
 
   .nav {
@@ -354,9 +377,9 @@
       line-height: 0.8rem;
     }
     h1:hover {
-      font-family: ogg;
+      // font-family: ogg;
   
-      line-height: 2.5rem;
+      // line-height: 2.5rem;
     }
     h1,
     h2,

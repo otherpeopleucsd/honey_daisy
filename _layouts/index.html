@@ -1,65 +1,57 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="utf-8">
-  <title>{{ page.title }} - {{ site.title }}</title>
-  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
-  <script src="https://kit.fontawesome.com/b7dcab30d5.js" crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="scripts/jquery.cookies.2.2.0.min.js"></script>
-  {% include favicons.html %}
-</head>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    <script src="https://kit.fontawesome.com/b7dcab30d5.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.cookies.2.2.0.min.js"></script>
+    {% include favicons.html %}
+  </head>
 
+  <body>
 
-<body>
+    {{ content}}
 
+    {% include header.html %}
 
-
-
-
-  {{ content}}
-
-  {% include header.html %}
-
-
-
-
-
-
-  <!-- LANDING TITLE -->
-  <div class="index_body">
-    <div class="title">OTHER<br>PEOPLE<br></div>
-    <div class="index_column">
-      <div class="title_sub">
-        <h3>{{ page.quarter }} — Collection No. {{ page.collection_no_ }}</h3>
-      </div>
-      <br>
-      <div class="title_sub">
-        <a href="{{ site.url }}{{ site.baseurl }}/collection"> <button class="button">Discover</button></a>
+    <!-- LANDING TITLE -->
+    <div class="index_body">
+      <div class="title" style="text-align:left;">Other<br>People © — </div>
+      <div class="title" style="text-align:right;">Collection No. {{ page.collection_no_ }}<br>{{ page.quarter }}
+      
+      
+        <?xml version="1.0" encoding="utf-8"?>
+        <!-- Generator: Adobe Illustrator 24.1.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px" y="0px" viewBox="0 0 1200 1200" style="enable-background:new 0 0 1200 1200;" xml:space="preserve">
+          <style type="text/css"></style>
+          <polyline class="st0" points="116.7,116.7 1083.3,116.7 1083.3,1083.3 " />
+          <line class="st0" x1="1083.3" y1="116.7" x2="116.7" y2="1083.3" />
+        </svg>
+      
       </div>
 
-    </div>
 
-    <!-- <div class="featured_image">
+      <!-- <div class="featured_image">
       {% if page.featured %}
       <img src="{{site.baseurl}}{{ page.featured }}">
       {% endif %}
     </div> -->
 
+      {% include collection.html %}
 
+      <!-- RECENT VISUAL ARTS HEADER -->
+      <div class="index_column_child">
+        <div class="category">Recent Visual Arts</div>
 
+        <div class="recent_works_art_parent">
 
-
-        <!-- RECENT VISUAL ARTS HEADER -->
-        <div class="index_column_child">
-          <div class="category">Recent Visual Arts</div>
-    
-          <div class="recent_works_art_parent">
-    
-            <!-- VISUAL ARTS -->
-            {% for post in site.categories['Visual Arts']  limit:2 %}
+          <!-- VISUAL ARTS -->
+          {% for post in site.categories['Visual Arts'] limit : 2 %}
             <div class="recent_works_art">
               <a href="{{site.baseurl}}{{ post.url }}">
                 <div class="thumb">
@@ -68,94 +60,77 @@
                 <h1>{{ post.title }}</h1>
               </a>
               <h3> by {{ post.contributor }}</h3>
-    
+
               <h3>
                 <b>{{ post.category }}</b> —
                 <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
               </h3>
             </div>
-            {% endfor %}
-          </div>
+          {% endfor %}
         </div>
-
-
-
-
-    <!-- RECENT LITERATURE HEADER -->
-    <div class="index_column_child">
-      <div class="category">Recent Literature</div>
-      <div class="recent_works_parent">
-
-        <!-- POETRY -->
-        {% for post in site.categories['Poetry']   limit:3 %}
-        <div class="recent_works">
-          <a href="{{site.baseurl}}{{ post.url }}">
-            <h1>{{ post.title }}</h1>
-            <h3> by {{ post.contributor }}</h3>
-          </a>
-          <h3>
-            <b>{{ post.category }}</b> —
-            <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
-          </h3>
-        </div>
-        {% endfor %}
-
-        <!-- FICTION -->
-        {% for post in site.categories['Fiction']   limit:3 %}
-        <div class="recent_works">
-          <a href="{{site.baseurl}}{{ post.url }}">
-            <h1>{{ post.title }}</h1>
-            <h3> by {{ post.contributor }}</h3>
-          </a>
-          <h3>
-            <b>{{ post.category }}</b> —
-            <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
-          </h3>
-        </div>
-        {% endfor %}
-
-        <!-- NONFICTION -->
-        {% for post in site.categories['Nonfiction']   limit:3 %}
-        <div class="recent_works">
-          <a href="{{site.baseurl}}{{ post.url }}">
-            <h1>{{ post.title }}</h1>
-            <h3> by {{ post.contributor }}</h3>
-          </a>
-          <h3>
-            <b>{{ post.category }}</b> —
-            <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
-          </h3>
-        </div>
-        {% endfor %}
       </div>
+
+      <!-- RECENT LITERATURE HEADER -->
+      <div class="index_column_child">
+        <div class="category">Recent Literature</div>
+        <div class="recent_works_parent">
+
+          <!-- POETRY -->
+          {% for post in site.categories['Poetry'] limit : 3 %}
+            <div class="recent_works">
+              <a href="{{site.baseurl}}{{ post.url }}">
+                <h1>{{ post.title }}</h1>
+                <h3> by {{ post.contributor }}</h3>
+              </a>
+              <h3>
+                <b>{{ post.category }}</b> —
+            <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
+              </h3>
+            </div>
+          {% endfor %}
+
+          <!-- FICTION -->
+          {% for post in site.categories['Fiction'] limit : 3 %}
+            <div class="recent_works">
+              <a href="{{site.baseurl}}{{ post.url }}">
+                <h1>{{ post.title }}</h1>
+                <h3> by {{ post.contributor }}</h3>
+              </a>
+              <h3>
+                <b>{{ post.category }}</b> —
+            <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
+              </h3>
+            </div>
+          {% endfor %}
+
+          <!-- NONFICTION -->
+          {% for post in site.categories['Nonfiction'] limit : 3 %}
+            <div class="recent_works">
+              <a href="{{site.baseurl}}{{ post.url }}">
+                <h1>{{ post.title }}</h1>
+                <h3> by {{ post.contributor }}</h3>
+              </a>
+              <h3>
+                <b>{{ post.category }}</b> —
+            <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
+              </h3>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+
     </div>
 
+    {% include footer.html %}
 
+    <!-- THIS DISABLES RIGHT CLICK -->
+    {% include disable_copy.html %}
+    {% include popup.html %}
 
+    <!-- {% include filters.html %} -->
 
+    {% include analytics.html %}
 
-
-
-
-  </div>
-
-
-  {% include footer.html %}
-
-  <!-- THIS DISABLES RIGHT CLICK -->
-  {% include disable_copy.html %}
-  {% include popup.html %}
-
-  <!-- {% include filters.html %} -->
-
-
-
-
-
-
-
-  {% include analytics.html %}
-
-</body>
+  </body>
 
 </html>

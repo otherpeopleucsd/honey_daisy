@@ -7,8 +7,10 @@ $h1: 3.5rem;
 $p: 0.9rem;
 
 h1 {
-  font-family: "basier_circlesemi";
-  font-size: 1.8rem;
+  // font-family: "basier_circlesemi";
+  font-family: "arial";
+
+  font-size: 1.5rem;
   font-weight: normal;
 }
 
@@ -16,6 +18,7 @@ h2 {
   font-family: "basier_circleregular";
   font-weight: normal;
   font-size: 1rem;
+
 }
 
 h3 {
@@ -24,7 +27,6 @@ h3 {
   text-transform: uppercase;
   opacity: 0.5;
   font-weight: normal;
-
 }
 
 h4 {
